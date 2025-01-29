@@ -1,0 +1,50 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src, $font-src-reserve) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $font-src, $font-src-reserve;
+  }
+}
+
+@mixin font($font-family, $font-size, $line-height, $text-color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin button-mobile {
+  font-family: $primary-font;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin button-tablet {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin button-desktop {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
