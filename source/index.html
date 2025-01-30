@@ -16,18 +16,301 @@
   </head>
 
   <body class="page-body">
-
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero привет</div>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <h1 class="visually-hidden">Стажировка за рубежом.</h1>
+    <section class="page-body__hero hero" data-test="hero">
+      <div class="container hero__wrapper">
+        <h2 class="visually-hidden">Профессиональный опыт обучения.</h2>
+        <header class="hero__hero-header hero-header">
+          <div class="hero-header__logo-wrapper">
+            <img class="hero-header__logo" src="./img/logo.svg" alt="Логотип нашей организации." width="30" height="30">
+          </div>
+            <div class="hero-header__menu-wrapper">
+              <button class="hero-header__nav-button nav-button" type="button">
+                <span class="nav-button__text">Меню</span>
+                <div class="nav-button__figure">
+                  <div class="nav-button__lines"></div>
+                </div>
+              </button>
+              <nav class="hero-header__navigation-menu navigation-menu">
+                <ul class="navigation-menu__list">
+                  <li class="navigation-menu__item">
+                    <a class="navigation-menu__link" href="#">О проекте</a>
+                  </li>
+                  <li class="navigation-menu__item navigation-menu__item--submenu navigation-menu__item--open">
+                    <button class="navigation-menu__submenu-button" type="button">Программы</button>
+                    <ul class="navigation-menu__submenu-list navigation-menu__submenu-list--is-open navigation-menu__submenu-list--is-overflow-visible">
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">Стажировки</a>
+                      </li>
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">Волонтёрство</a>
+                      </li>
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">Учёба</a>
+                      </li>
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">Религия</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navigation-menu__item">
+                    <a class="navigation-menu__link" href="#">как поехать</a>
+                  </li>
+                  <li class="navigation-menu__item">
+                    <a class="navigation-menu__link" href="#">отзывы</a>
+                  </li>
+                  <li class="navigation-menu__item navigation-menu__item--submenu">
+                    <button class="navigation-menu__submenu-button" type="button">новости</button>
+                    <ul class="navigation-menu__submenu-list navigation-menu__submenu-list--is-closed">
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">новость 1</a>
+                      </li>
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">новость 2</a>
+                      </li>
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">новость 3</a>
+                      </li>
+                      <li class="navigation-menu__submenu-item">
+                        <a class="navigation-menu__submenu-link" href="#">новость 4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navigation-menu__item">
+                    <a class="navigation-menu__link" href="#">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="swiper"></div>
+      </div>
+    </section>
+    <main class="page-body__main main">
+      <section class="main__about about" data-test="about">
+        <div class="about__container">
+          <div class="about__wrapper-text">
+            <h3 class="about__title">О проекте «Стажировка»</h3>
+            <p>«Стажировка» — совместный проект
+              правительств и волонтёрских бригад.</p>
+          </div>
+          <div class="about__wrapper-goal">
+            <h4>Наша цель</h4>
+            <b>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних
+              стадиях карьеры, предоставляя им инструменты для решения сложных
+              проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.
+            </b>
+            <div class="about__button-wrapper">
+              <p class="about__button-text">подробнее о проекте</p>
+              <a class="about__link-button" href=""></a>
+            </div>
+          </div>
+          <div class="about__wrapper-list">
+            <ul class="about__list">
+              <li class="about__item">
+                <span>Более 250 программ</span>>
+                <p>учебных и рабочих, разной длительностью от 3 месяцев до 1 года</p>
+              </li>
+              <li class="about__item">
+                <span>Более 3000 участников</span>>
+                <p>уже успешно прошли программу от «Стажировка» и остались в разных странах</p>
+              </li>
+              <li class="about__item">
+                <span>участники из 60 стран</span>>
+                <p>студенты со всего мира приезжают на программу «Стажировки» от 3 месяцев до 1 года</p>
+              </li>
+              <li class="about__item">
+                <span>от 4 200 $<br>
+                  до 8 400 $</span>>
+                <p>грант всем участникам для комфортного прохождения программы</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div data-test="programs">programs</div>
+      <section class="main__grant grant" data-test="grant">
+        <div class="grant__container">
+          <div class="grant__wrapper">
+            <h3 class="grant__title">Как поехать</h3>
+            <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите
+              актуальные сведения о доступных программах и городах, в которых можете пройти программу.
+            </p>
+            <picture>
+              <source media="(min-width: 1440px)" width="498" height="363" type="image/webp"
+              srcset="img/arrow-desktop@1x.webp 1x, img/arrow-desktop@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="498" height="363" type="image/jpg"
+              srcset="img/arrow-desktop@1x.jpg 1x, img/arrow-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="678" height="375" type="image/webp"
+              srcset="img/arrow-tablet@1x.webp 1x, img/arrow-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="678" height="375" type="image/jpg"
+              srcset="img/arrow-tablet@1x.jpg 1x, img/arrow-tablet@2x.jpg 2x">
+              <source width="290" height="200" type="image/webp"
+              srcset="img/arrow-mobile@1x.webp 1x, img/arrow-mobile@2x.webp 2x">
+              <img class="about__img" src="img/arrow-mobile@1x.jpg" width="290" height="200"
+              srcset="img/arrow-mobile@2x.jpg 2x" alt="Стрелки путеводитель" fetchpriority="high">
+            </picture>
+          </div>
+          <div class="grant__wrapper-list">
+            <p class="grant__p">Чтобы получить грант на обучение, вам нужно:</p>
+            <ul class="grant__list">
+              <li class="grant__item">
+                <span>1</span>
+                <p class="grant__text">Быть в возрасте от 16 до 30 лет</p>
+              </li>
+              <li class="grant__item">
+                <span>2</span>
+                <p class="grant__text">Иметь оконченное среднее образование</p>
+              </li>
+              <li class="grant__item">
+                <span>3</span>
+                <p class="grant__text">Иметь документально подтверждённое отсутствие
+                  судимости и пройти консульскую проверку</p>
+              </li>
+              <li class="grant__item">
+                <span>4</span>
+                <p class="grant__text">За последние 2 года быть
+                  не больше 3х месяцев подряд непрерывно в одной стране</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <section class="page-body__contacts contacts" data-test="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__title-wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+          </div>
+          <div class="contacts__list-wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3 class="contacts__contacts-title">центральный офис</h3>
+                <p class="contacts__p">г. Новосибирск, ул. Щетинкина 68, 
+                  культурный центр</p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__contacts-title">Телефон</h3>
+                <a class="contacts__p-link" href="tel:896387687676">+7 963 876 876 76</a>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__contacts-title">Email</h3>
+                <a class="contacts__p-link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" width="1240" height="486" type="image/webp"
+              srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="1240" height="486" type="image/jpg"
+              srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="678" height="500" type="image/webp"
+              srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="678" height="500" type="image/jpg"
+              srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <source width="290" height="240" type="image/webp"
+              srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <img class="contacts__map-img" src="img/map-mobile@1x.jpg" width="290" height="240"
+              srcset="img/map-mobile@2x.jpg 2x" alt="Карта" fetchpriority="high">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="main__form form" data-test="form">
+        <div class="form__container">
+          <h2 class="form__title">Напишите нам</h2>
+          <p class="form__paragraph">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+          <div class="form__wrapper">
+            <form class="form__form-question" method="post" action="https://echo.htmlacademy.ru">
+              <div class="form__input-wrapper">
+                <label class="form__label" for="name">Имя</label>
+                <input class="form__input" type="text" name="name" required>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="tel">Телефон</label>
+                <input class="form__input" type="tel" name="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="13" required>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label form__label-texarea" id="sms">Ваше сообщение</label>
+                <textarea class="form__text" name="text" id="sms"></textarea>
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label form__label-texarea" for="city-select">Выберите город</label>
+                <select name="city" id="city-select">
+                  <option value=""></option>
+                  <option value="Saint-Petersburg">Санкт-Петербург</option>
+                  <option value="Moskow">Москва</option>
+                  <option value="Petrozavodsk">Петрозаводск</option>
+                  <option value="Volgograd">Волгоград</option>
+                </select>
+              </div>
+              <div class="form__radio-wrapper">
+                <input class="form__radio" type="radio" id="radio" required>
+                <label class="form__label-radio" id="radio">Я согласен на обработку моих персональных
+                  данных</label>
+              </div>
+              <button class="form__button" type="post">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="page-body__footer footer" data-test="footer">
+      <div class="footer__wrapper">
+        <img class="footer__logotype logotype" width="52" height="52" src="img/logotype-footer.svg" alt="Логотип компании Internship." loading="lazy">
+        <div class="footer__list-wrapper">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" id="about">О проекте</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" id="programs">Программы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" id="grant">Как поехать</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" id="reviews">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" id="news">Новости</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" id="contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__container">
+        <div class="footer__text">
+          <a class="footer__link-text" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__stagirovka">Стажировка © 2023 Все права защищены</div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">Мы в Контакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--odnoklassniki" href="#">
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--reddit" href="#">
+                <span class="visually-hidden">Мы в Реддит</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <script type="module" src="js/main.js"></script>
   </body>
 
