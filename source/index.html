@@ -129,7 +129,9 @@
           </div>
         </div>
       </section>
+
       <div data-test="programs">programs</div>
+
       <section class="main__grant grant" data-test="grant">
         <div class="grant__container">
           <div class="grant__wrapper">
@@ -177,10 +179,174 @@
           </div>
         </div>
       </section>
+
       <div data-test="news">news</div>
-      <div data-test="FAQ">FAQ</div>
-      <div data-test="reviews">reviews</div>
-      <section class="page-body__contacts contacts" data-test="contacts">
+
+      <section class="main__faq faq" data-test="FAQ">
+        <div class="faq__container">
+          <h3 class="faq__title">Вопросы и ответы</h3>
+          <div class="faq__accordeon accordeon">
+            <div class="accordeon__content ">
+              <h4 class="accordeon__title">Кто организатор? Какие сроки у программы?</h4>
+              <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
+            </div>
+            <div class="accordeon__content">
+              <h4 class="accordeon__title">Что такое грант на обучение?</h4>
+              <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
+            </div>
+            <div class="accordeon__content accordeon__content--active accordeon__content--is-visible">
+              <h4 class="accordeon__title">Как определяется стоимость программы?</h4>
+              <p>Полная стоимость определяется организаторами в зависимости
+                от направления. В большинстве случаев грант «Стажировка»
+                не покрывает полную стоимость программы, и поэтому
+                предусматривается определённая доля личного участия.</p>
+            </div>
+            <div class="accordeon__content">
+              <h4 class="accordeon-item__title">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</h4>
+              <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
+            </div>
+            <div class="accordeon__content">
+              <h4 class="accordeon__title">Как выглядит полный
+                процесс регистрации на программу «Стажировка»?</h4>
+              <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__reviews reviews" data-test="reviews">
+        <div class="reviews__container-slide">
+          <h3 class="reviews__title">Отзывы</h3>
+          <div class="reviews__slider-wrapper">
+            <div class="reviews__button-wrapper reviews__button-wrapper--prev">
+              <button class="reviews__swiper-button--prev reviews__swiper-button swiper-button-prev swiper-button" type="button" tabindex="0">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+              </button>
+            </div>
+            <div class="reviews__button-wrapper reviews__button-wrapper--next">
+              <button class="reviews__swiper-button--next reviews__swiper-button swiper-button-next swiper-button" type="button" tabindex="0">
+                <span class="visually-hidden">Следующий слайд.</span>
+              </button>
+            </div>
+            <div class="reviews__swiper swiper3">
+              <div class="reviews__swiper-wrapper swiper-wrapper">
+                <div class="swiper-slide reviews__wrapper">
+                  <div class="reviews__wrapper-info">
+                    <div class="reviews__avatar">
+                      <picture>
+                        <source media="(min-width: 1440px)" width="90" height="90" type="image/webp" srcset="img/reviews-desktop1@1x.webp 1x, img/reviews-desktop1@2x.webp 2x">
+                        <source media="(min-width: 1440px)" width="90" height="90" type="image/png" srcset="img/reviews-desktop1@1x.png 1x, img/reviews-desktop1@2x.png 2x">
+                        <source media="(min-width: 768px)" width="90" height="90" type="image/webp" srcset="img/reviews-desktop1@1x.webp 1x, img/reviews-desktop1@2x.webp 2x">
+                        <source media="(min-width: 768px)" width="90" height="90" type="image/png" srcset="img/reviews-desktop1@1x.png 1x, img/reviews-desktop1@2x.png 2x">
+                        <source width="60" height="60" type="image/webp" srcset="img/reviews-mobile1@1x.webp 1x, img/reviews-mobile1@2x.webp 2x">
+                        <img class="reviews__img" src="img/reviews-mobile1@1x.png" width="60" height="60" srcset="img/reviews-mobile1@2x.png 2x" alt="Отзыв от девушки" fetchpriority="low">
+                      </picture>
+                      <p class="reviews__name">Лола Алекс</p>
+                    </div>
+                    <div class="reviews__list-wrapper">
+                      <ul class="reviews__list">
+                        <li class="reviews__item reviews__item--programs">
+                          <p class="reviews__p">программа</p>
+                          <b class="reviews__b">Masa Art Challenge</b>
+                        </li>
+                        <li class="reviews__item reviews__item--data">
+                          <p class="reviews__p">Дата</p>
+                          <b class="reviews__b">Осень 2022</b>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="reviews__otziv-wrapper">
+                    <span class="reviews__otziv">Я могу с уверенностью сказать,
+                      что это был один из самых незабываемых опытов в жизни!</span>
+                    <p>Я рекомендую программу «Стажировка» всем студентам,
+                      желающим получить незабываемые впечатления. Сочетание
+                      путешествий, общения и значимой работы действительно отличает
+                      её от других программ, и я чувствую огромную благодарность
+                      за предоставленную мне возможность.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__wrapper">
+                  <div class="reviews__wrapper-info">
+                    <div class="reviews__avatar">
+                      <picture>
+                        <source media="(min-width: 1440px)" width="90" height="90" type="image/webp" srcset="img/reviews-desktop2@1x.webp 1x, img/reviews-desktop2@2x.webp 2x">
+                        <source media="(min-width: 1440px)" width="90" height="90" type="image/png" srcset="img/reviews-desktop2@1x.png 1x, img/reviews-desktop2@2x.png 2x">
+                        <source media="(min-width: 768px)" width="90" height="90" type="image/webp" srcset="img/reviews-desktop2@1x.webp 1x, img/reviews-desktop2@2x.webp 2x">
+                        <source media="(min-width: 768px)" width="90" height="90" type="image/png" srcset="img/reviews-desktop2@1x.png 1x, img/reviews-desktop2@2x.png 2x">
+                        <source width="60" height="60" type="image/webp" srcset="img/reviews-mobile2@1x.webp 1x, img/reviews-mobile2@2x.webp 2x">
+                        <img class="reviews__img" src="img/reviews-mobile2@1x.png" width="60" height="60" srcset="img/reviews-mobile2@2x.png 2x" alt="Отзыв от мужчины" fetchpriority="low">
+                      </picture>
+                      <p class="reviews__name">Давид Иванов</p>
+                    </div>
+                    <div class="reviews__list-wrapper">
+                      <ul class="reviews__list">
+                        <li class="reviews__item reviews__item--programs">
+                          <p class="reviews__p">программа</p>
+                          <b class="reviews__b">Volunteer Chance</b>
+                        </li>
+                        <li class="reviews__item reviews__item--data">
+                          <p class="reviews__p">Дата</p>
+                          <b class="reviews__b">Лето 2022</b>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="reviews__otziv-wrapper">
+                    <span class="reviews__otziv">Благодаря опыту стажировки я узнал
+                      так много нового о себе и об окружающем мире.</span>
+                    <p>Каждый день был возможностью оказать ощутимое влияние
+                      на жизнь других людей. Я бы очень рекомендовал
+                      эту волонтёрскую программу всем, кто ищет значимый
+                      и незабываемый опыт. Организация была на высшем уровне.
+                      Для меня было честью быть частью такой удивительной
+                      инициативы.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__wrapper">
+                  <div class="reviews__wrapper-info">
+                    <div class="reviews__avatar">
+                      <picture>
+                        <source media="(min-width: 1440px)" width="90" height="90" type="image/webp" srcset="img/reviews-desktop2@1x.webp 1x, img/reviews-desktop2@2x.webp 2x">
+                        <source media="(min-width: 1440px)" width="90" height="90" type="image/png" srcset="img/reviews-desktop2@1x.png 1x, img/reviews-desktop2@2x.png 2x">
+                        <source media="(min-width: 768px)" width="90" height="90" type="image/webp" srcset="img/reviews-desktop2@1x.webp 1x, img/reviews-desktop2@2x.webp 2x">
+                        <source media="(min-width: 768px)" width="90" height="90" type="image/png" srcset="img/reviews-desktop2@1x.png 1x, img/reviews-desktop2@2x.png 2x">
+                        <source width="60" height="60" type="image/webp" srcset="img/reviews-mobile2@1x.webp 1x, img/reviews-mobile2@2x.webp 2x">
+                        <img class="reviews__img" src="img/reviews-mobile2@1x.png" width="60" height="60" srcset="img/reviews-mobile2@2x.png 2x" alt="Отзыв от мужчины" fetchpriority="low">
+                      </picture>
+                      <p class="reviews__name">Алекс Иванов</p>
+                    </div>
+                    <div class="reviews__list-wrapper">
+                      <ul class="reviews__list">
+                        <li class="reviews__item reviews__item--programs">
+                          <p class="reviews__p">программа</p>
+                          <b class="reviews__b">Volunteer Chance</b>
+                        </li>
+                        <li class="reviews__item reviews__item--data">
+                          <p class="reviews__p">Дата</p>
+                          <b class="reviews__b">Зима 2022</b>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="reviews__otziv-wrapper">
+                    <span class="reviews__otziv">Благодаря опыту стажировки я узнал
+                      так много нового о себе и об окружающем мире.</span>
+                    <p>Каждый день был возможностью оказать ощутимое влияние
+                      на жизнь других людей. Я бы очень рекомендовал
+                      эту волонтёрскую программу всем, кто ищет значимый
+                      и незабываемый опыт. Организация была на высшем уровне.
+                      Для меня было честью быть частью такой удивительной
+                      инициативы.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__contacts contacts" data-test="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__title-wrapper">
             <h2 class="contacts__title">Контакты</h2>
@@ -220,6 +386,7 @@
           </div>
         </div>
       </section>
+
       <section class="main__form form" data-test="form">
         <div class="form__container">
           <h2 class="form__title">Напишите нам</h2>
@@ -259,6 +426,7 @@
         </div>
       </section>
     </main>
+    
     <section class="page-body__footer footer" data-test="footer">
       <div class="footer__wrapper">
         <img class="footer__logotype logotype" width="52" height="52" src="img/logotype-footer.svg" alt="Логотип компании Internship." loading="lazy">
