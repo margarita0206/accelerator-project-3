@@ -348,25 +348,27 @@
 
       <section class="main__contacts contacts" data-test="contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__title-wrapper">
-            <h2 class="contacts__title">Контакты</h2>
-          </div>
-          <div class="contacts__list-wrapper">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <h3 class="contacts__contacts-title">центральный офис</h3>
-                <p class="contacts__p">г. Новосибирск, ул. Щетинкина 68, 
-                  культурный центр</p>
-              </li>
-              <li class="contacts__item">
-                <h3 class="contacts__contacts-title">Телефон</h3>
-                <a class="contacts__p-link" href="tel:896387687676">+7 963 876 876 76</a>
-              </li>
-              <li class="contacts__item">
-                <h3 class="contacts__contacts-title">Email</h3>
-                <a class="contacts__p-link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
-              </li>
-            </ul>
+          <div class="contacts__container">
+            <div class="contacts__title-wrapper">
+              <h2 class="contacts__title title">Контакты</h2>
+            </div>
+            <div class="contacts__list-wrapper">
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--contacts">
+                  <span class="contacts__contacts-title">центральный офис</span>
+                  <p class="contacts__p">г. Новосибирск, ул. Щетинкина 68, 
+                    культурный центр</p>
+                </li>
+                <li class="contacts__item contacts__item--tel">
+                  <span class="contacts__contacts-title">Телефон</span>
+                  <a class="contacts__p-link" href="tel:896387687676">+7 963 876 876 76</a>
+                </li>
+                <li class="contacts__item contacts__item--email">
+                  <span class="contacts__contacts-title">Email</span>
+                  <a class="contacts__p-link contacts__p-link--email" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="contacts__map-wrapper">
             <picture>
