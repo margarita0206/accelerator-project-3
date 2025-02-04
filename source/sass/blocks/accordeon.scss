@@ -1,0 +1,54 @@
+.accordeon__content {
+	width: 290px;
+	padding: 22px 17px;
+	border: 2px solid $blue-color;
+	border-radius: 12px;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&--active {
+		background-color: $blue-color;
+		color: $white-color;
+	}
+
+	@media (min-width: $tablet-width) {
+		width: 678px;
+		padding: 32px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 1028px;
+		padding: 42px;
+	}
+
+}
+
+.accordeon__title {
+	@include font($primary-font, 16px, 18px, $blue-color);
+
+	font-weight: 400;
+	margin: 0;
+	width: 184px;
+	display: block;
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 22px, 26px, $blue-color);
+
+	  font-weight: 400;
+		width: 564px;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 28px, 34px, $blue-color);
+
+	  font-weight: 400;
+		width: 894px;
+	}
+
+	&--active {
+		color: $white-color;
+	}
+}

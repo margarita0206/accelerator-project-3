@@ -1,0 +1,50 @@
+.hero-header {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 54px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 290px;
+  z-index: 2;
+
+	@media (min-width: $tablet-width) {
+		width: 678px;
+    top: 30px;
+    left: 45px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 1240px;
+    top: 60px;
+    left: 100px;
+	}
+}
+
+.hero-header__logo-wrapper {
+  width: 52px;
+  height: 52px;
+  background-color: $white-color;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-header__menu-wrapper {
+  position: absolute;
+  display: flex;
+  flex-flow: wrap;
+  width: 290px;
+  top: -1px;
+  right: 1px;
+  margin: 0 0 0 auto;
+  gap: 4px;
+
+	@media (min-width: $tablet-width) {
+		width: 286px;
+	}
+}

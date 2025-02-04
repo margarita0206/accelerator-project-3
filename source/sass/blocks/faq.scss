@@ -1,0 +1,52 @@
+.faq {
+	width: 320px;
+  padding: 50px 15px;
+
+	@media (min-width: $tablet-width) {
+		width: 768px;
+		padding: 50px 45px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 1440px;
+		padding: 60px 206px;
+	}
+}
+
+.faq__container {
+	width: 290px;
+	margin: 0 auto;
+
+	@media (min-width: $tablet-width) {
+		width: 678px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 1028px;
+	}
+}
+
+.faq__title {
+	@include font($primary-font, 20px, 20px, $blue-color);
+
+	font-weight: 400;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 290px;
+	text-align: center;
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 34px, 50px, $blue-color);
+
+	  font-weight: 400;
+		margin-bottom: 40px;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 50px, 50px, $blue-color);
+
+	  font-weight: 400;
+		margin-bottom: 60px;
+		width: 427px;
+	}
+}

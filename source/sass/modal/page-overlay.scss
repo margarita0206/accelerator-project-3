@@ -1,0 +1,14 @@
+.page-overlay {
+  background-color: rgba(13, 29, 51, 0.4);
+  width: 100vw;
+  height: 500lvh;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s $smooth;
+  pointer-events: none;
+  z-index: 2;
+
+  &--active {
+    opacity: 1;
+  }
+}

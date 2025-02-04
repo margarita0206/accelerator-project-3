@@ -1,0 +1,163 @@
+.navigation-menu {
+  background-color: $blue-color;
+  border-radius: 30px;
+  padding: 35px 25px;
+  width: 100%;
+  transition: max-height 0.3s $smooth, padding 0.3s $smooth;
+  overflow: hidden;
+
+  &--is-closed {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 25px;
+  }
+
+  &--is-overflow-visible {
+    overflow: visible;
+  }
+
+  &--is-opened {
+    max-height: 1500px;
+  }
+}
+
+.navigation-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.navigation-menu__item:not(:last-child) {
+  margin: 0 0 28px;
+}
+
+.navigation-menu__item--submenu {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.navigation-menu__link {
+  color: $white-color;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 70%;
+  transition: opacity 0.3s $smooth;
+
+  &--active {
+    opacity: 100%;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+
+  &:focus-visible {
+    opacity: 100%;
+    outline: none;
+  }
+}
+
+.navigation-menu__submenu-button {
+  color: $white-color;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  cursor: pointer;
+  opacity: 70%;
+  width: min-content;
+  position: relative;
+  transition: opacity 0.3s $smooth;
+
+  &--active::after {
+    transform: rotate(180deg);
+  }
+
+  &--active {
+    opacity: 100%;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+
+  &:focus-visible {
+    opacity: 100%;
+    outline: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    right: -20px;
+    transition: transform 0.3s $smooth;
+    background: $white-color;
+    mask: url("/__spritemap#sprite-arrow-down-view") center center no-repeat;
+  }
+}
+
+.navigation-menu__submenu-list {
+  list-style-type: none;
+  padding: 0 0 0 16px;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 126px;
+  display: flex;
+  flex-flow: wrap;
+  gap: 16px;
+  transition: max-height 0.15s ease, margin 0.3s $smooth;
+  overflow: hidden;
+
+
+  &--is-closed {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  &--is-overflow-visible {
+    overflow: visible;
+  }
+
+  &--is-open {
+    max-height: 1000px;
+    margin: 20px 0 0;
+  }
+}
+
+.navigation-menu__submenu-link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $white-color;
+  text-decoration: none;
+  opacity: 60%;
+  transition: opacity 0.3s $smooth;
+
+  &--active {
+    opacity: 100%;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+
+  &:focus-visible {
+    opacity: 100%;
+    outline: none;
+  }
+}

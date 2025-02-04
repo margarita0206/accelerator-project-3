@@ -1,0 +1,16 @@
+.hero {
+  min-height: 568px;
+  // padding: 20px 15px;
+  padding: 0;
+  // background-color: gray;
+
+	@media (min-width: $tablet-width) {
+		 min-height: 1024px;
+    // padding: 30px 45px 60px 45px;
+	}
+
+	@media (min-width: $desktop-width) {
+		min-height: 800px;
+    // padding: 30px 100px 60px 100px;
+	}
+}
