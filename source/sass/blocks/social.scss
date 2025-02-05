@@ -13,10 +13,13 @@
 
   @media (min-width: $tablet-width) {
     width: 128px;
+    margin-top:25px;
+    margin-left: 230px;
   }
 
   @media (min-width: $desktop-width) {
     width: 148px;
+    margin-left: 410px;
   }
 }
 
