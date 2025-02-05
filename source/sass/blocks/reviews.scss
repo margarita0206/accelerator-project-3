@@ -48,6 +48,7 @@
 	@include font($primary-font, 20px, 20px, $blue-color);
 
 	font-weight: 400;
+	margin: 0;
 	margin-bottom: 35px;
 
 	@media (min-width: $tablet-width) {
@@ -118,6 +119,29 @@
 		width: 229px;
 		margin-top: 23px;
 	}
+}
+
+.reviews__title-wrapper {
+	width: 290px; 
+	min-height: 30px; 
+	display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+	justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.reviews__reviews-wrapper {
+	width: 52px;
+	height: 22px;
+	display: block;
 }
 
 .reviews__list {
@@ -217,5 +241,13 @@
  
 	    font-weight: 400;
 		}
+	}
+}
+
+.reviews__swiper-scrollbar {
+	display: none;
+
+	@media (min-width: $tablet-width) {
+		display: block;
 	}
 }

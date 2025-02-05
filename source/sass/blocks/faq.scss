@@ -30,7 +30,7 @@
 	@include font($primary-font, 20px, 20px, $blue-color);
 
 	font-weight: 400;
-	margin: 0;
+	margin: 0 auto;
 	margin-bottom: 30px;
 	width: 290px;
 	text-align: center;
@@ -40,6 +40,7 @@
 
 	  font-weight: 400;
 		margin-bottom: 40px;
+		letter-spacing: -1.1px;
 	}
 
 	@media (min-width: $desktop-width) {

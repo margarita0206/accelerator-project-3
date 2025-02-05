@@ -321,49 +321,63 @@
         <div class="faq__container">
           <h3 class="faq__title">Вопросы и ответы</h3>
           <div class="faq__accordion accordeon">
-            
-            <button class="accordion__button">Кто организатор? Какие сроки у программы?</button>
-            <div class="accordion__content">
-              <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
-            </div>
-            <button class="accordion__button">Что такое грант на обучение?</button>
-            <div class="accordion__content">
-              <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
-            </div>
-            <button class="accordion__button">Как определяется стоимость программы?</button>
-            <div class="accordion__content">
-              <p>Полная стоимость определяется организаторами в зависимости
-                от направления. В большинстве случаев грант «Стажировка»
-                не покрывает полную стоимость программы, и поэтому
-                предусматривается определённая доля личного участия.</p>
-            </div>
-            <button  class="accordion__button">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</button>
-            <div class="accordion__content">
-              <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
-            </div>
-            <button class="accordion__button">Как выглядит полный
-              процесс регистрации на программу «Стажировка»?</button>
-            <div class="accordion__content">
-              <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
-            </div>
+            <ul class="accordion__list">
+              <li class="accordion__item">
+                <button class="accordion__button">Кто организатор? Какие сроки у программы?</button>
+                <div class="accordion__content">
+                  <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__button">Что такое грант на обучение?</button>
+                <div class="accordion__content">
+                  <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__button active">Как определяется стоимость программы?</button>
+                <div class="accordion__content active">
+                  <p>Полная стоимость определяется организаторами в зависимости
+                  от направления. В большинстве случаев грант «Стажировка»
+                  не покрывает полную стоимость программы, и поэтому
+                  предусматривается определённая доля личного участия.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button  class="accordion__button">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</button>
+                <div class="accordion__content">
+                  <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__button">Как выглядит полный
+                процесс регистрации на программу «Стажировка»?</button>
+                <div class="accordion__content">
+                  <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="main__reviews reviews" data-test="reviews">
         <div class="reviews__container-slide">
-          <h3 class="reviews__title">Отзывы</h3>
-          <div class="reviews__slider-wrapper">
-            <div class="reviews__button-wrapper reviews__button-wrapper--prev">
-              <button class="reviews__swiper-button--prev reviews__swiper-button swiper-button-prev swiper-button" type="button" tabindex="0">
-                <span class="visually-hidden">Предыдущий слайд.</span>
-              </button>
+          <div class="reviews__title-wrapper">
+            <h3 class="reviews__title">Отзывы</h3>
+            <div class="reviews__reviews-wrapper">
+              <div class="reviews__button-wrapper reviews__button-wrapper--prev">
+                <button class="reviews__swiper-button reviews__swiper-button--prev swiper-button swiper-button-prev" type="button" tabindex="0">
+                  <span class="visually-hidden">Предыдущий слайд.</span>
+                </button>
+              </div>
+              <div class="reviews__button-wrapper reviews__button-wrapper--next">
+                <button class="reviews__swiper-button reviews__swiper-button--next swiper-button swiper-button-next" type="button" tabindex="0">
+                  <span class="visually-hidden">Следующий слайд.</span>
+                </button>
+              </div>
             </div>
-            <div class="reviews__button-wrapper reviews__button-wrapper--next">
-              <button class="reviews__swiper-button--next reviews__swiper-button swiper-button-next swiper-button" type="button" tabindex="0">
-                <span class="visually-hidden">Следующий слайд.</span>
-              </button>
-            </div>
+          </div>
             <div class="reviews__swiper swiper3">
               <div class="reviews__swiper-wrapper swiper-wrapper">
                 <div class="swiper-slide reviews__wrapper">
@@ -477,6 +491,7 @@
                   </div>
                 </div>
               </div>
+              <div class="reviews__swiper-scrollbar swiper-scrollbar"></div>
             </div>
           </div>
         </div>

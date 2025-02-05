@@ -1,0 +1,71 @@
+.swiper-button {
+	width: 22px;
+	height: 22px;
+	border: none;
+	background-color: $primary-fon;
+		cursor: pointer;
+		position: relative;
+		transition: border 0.3s cubic-bezier(0.4, 0, 0.4, 1), background 0.3s cubic-bezier(0.4, 0, 0.4, 1);
+	
+		&:hover {
+			background: $primary-fon;
+		}
+	
+		&:hover::before {
+			background: rgba(49, 109, 194, 0.7);
+		}
+	
+		&:focus-visible {
+			border-radius: 50%;
+			background-color: $white-color;
+			width: 22px;
+			height: 22px;
+		}
+	
+		&:focus-visible::after {
+			background: $blue-color;
+		}
+	
+		&:active {
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.7);
+			width: 22px;
+			height: 22px;
+		}
+	
+		&:active::after {
+			background: rgba(49, 109, 194, 0.7);
+		}
+	
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			background-color: $blue-color;
+		}
+	
+		&--prev::after {
+			mask-image: url("/__spritemap#sprite-arrow-left-view");
+			mask-repeat: no-repeat;
+			mask-size: 15px 15px;
+		}
+	
+		&--next::after {
+			mask-image: url("/__spritemap#sprite-arrow-right-view");
+			mask-repeat: no-repeat;
+			mask-size: 15px 15px;
+
+		}
+	
+		&:disabled {
+			background-color: $primary-fon;
+			pointer-events: none;
+			cursor: auto;
+		}
+	
+		&:disabled::after {
+			background-color: $disabled-color;
+		}
+	}
