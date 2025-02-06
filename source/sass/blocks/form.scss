@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
 
 	@media (min-width: $tablet-width) {
-		margin: 50px 58px;
+		margin: 0 auto;
 	  width: 652px;
     min-height: 780px;
 		padding: 0;
@@ -33,7 +33,6 @@
 	
 	@media (min-width: $desktop-width) {
 		width: 1240px;
-		margin: 60px 100px;
     min-height: 780px;
 		padding: 0;
     background-image:
@@ -56,13 +55,12 @@
 	border-radius: 16px;
 	min-height: 670px;
 
-
 	@media (min-width: $tablet-width) {
 		top: 50px;
 		min-height: 780px;
 		padding: 30px 40px 36px;
 		width: 442px;
-		margin: 0;
+		margin: 50px 0;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -70,6 +68,7 @@
 		min-height: 800px;
 		left: 100px;
 		padding: 30px 70px 40px 70px;
+		margin: 60px 0;
 	}
 }
 
@@ -128,30 +127,32 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	margin-bottom: 20px;
-
-
 }
 
 .form__label {
-	@include font($primary-font, 12px, 14px, $white-color);
+	@include font($primary-font, 12px, 14px, $primary-fon);
 
-	  font-weight: 400;
+	font-weight: 400;
+	margin-bottom: 12px;
+	opacity: 0.8;
+
+	&:disabled {
+		color: rgba(240, 239, 233, 0.6);
+	}
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 14px, 20px, $primary-fon);
+
+		font-weight: 400;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 14px, 14px, $primary-fon);
+
+		font-weight: 400;
+		width: 346px;
 		margin-bottom: 12px;
-		opacity: 0.8;
-
-		@media (min-width: $tablet-width) {
-			@include font($primary-font, 14px, 20px, $white-color);
-	
-			font-weight: 400;
-		}
-	
-		@media (min-width: $desktop-width) {
-			@include font($primary-font, 14px, 14px, $white-color);
-	
-			font-weight: 400;
-			width: 346px;
-			margin-bottom: 12px;
-		}
+	}
 }
 
 .form__input {
@@ -167,6 +168,33 @@
 
 	@media (min-width: $desktop-width) {
 		width: 350px; 
+	}
+
+	&:hover {
+		border-color: $white-color;
+	}
+
+	&:focus {
+		border-color: $white-color;
+		color: $white-color;
+	}
+
+	&:focus-visible {
+		border-color: $white-color;
+	}
+
+	&:active {
+		border-color: $white-color;
+	}
+
+	&:disabled {
+		outline: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.4);
+	}
+
+	&--error {
+		outline: rgba(255, 94, 102, 0.2);
+		border-color: $error-color;
 	}
 }
 
@@ -219,6 +247,33 @@
 	@media (min-width: $desktop-width) {
 		width: 350px; 
 	}
+
+	&:hover {
+		border-color: $white-color;
+	}
+
+	&:focus {
+		border-color: $white-color;
+		color: $white-color;
+	}
+
+	&:focus-visible {
+		border-color: $white-color;
+	}
+
+	&:active {
+		border-color: $white-color;
+	}
+
+	&:disabled {
+		outline: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.4);
+	}
+
+	&--error {
+		outline: rgba(255, 94, 102, 0.2);
+		border-color: $error-color;
+	}
 }
 
 .form__select-wrapper {
@@ -235,21 +290,66 @@
 	@media (min-width: $desktop-width) {
 		width: 350px; 
 	}
+
+	&:hover {
+		border-color: $white-color;
+	}
+
+	&:focus {
+		border-color: $white-color;
+		color: $white-color;
+	}
+
+	&:focus-visible {
+		border-color: $white-color;
+	}
+
+	&:active {
+		border-color: $white-color;
+	}
+
+	&:disabled {
+		outline: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.4);
+	}
+
+	&--error {
+		outline: rgba(255, 94, 102, 0.2);
+		border-color: $error-color;
+	}
 }
 
 .form__select {
-	  appearance: none;
-		display: block;
-		width: 30px;
-		height: 30px;
-		mask-image: url("/__spritemap#sprite-arrow-down-view");
-		mask-repeat: no-repeat;
-		background-color: $white-color;
-		mask-size: 16px 16px;
-		mask-position: center;
-		margin-top: 10px;
-		margin-left: 223px;
+	appearance: none;
+	display: block;
+	width: 30px;
+	height: 30px;
+	mask-image: url("/__spritemap#sprite-arrow-down-view");
+	mask-repeat: no-repeat;
+	background-color: $white-color;
+	mask-size: 16px 16px;
+	mask-position: center;
+	margin-top: 10px;
+	margin-left: 223px;
+
+	&:active,
+	&:focus {
+		transform: rotate(180deg);
 	}
+
+	&:default {
+		mask-image: url("/__spritemap#sprite-arrow-down-view");
+		transform: rotate(180deg);
+	}
+
+	@media (min-width: $tablet-width) {
+		 margin-left: 325px;
+	}
+
+	@media (min-width: $desktop-width) {
+		 margin-left: 313px;
+	}
+}
 
 .form__label-checkbox {
 	@include font($primary-font, 12px, 14px, $white-color);

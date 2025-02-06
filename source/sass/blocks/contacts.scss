@@ -169,6 +169,25 @@
 	text-decoration: none;
 	margin-bottom: 20px;
 
+	&:hover {
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	&:focus {
+		color: $primary-color;
+		border-bottom: 1px solid $primary-color;
+	}
+
+	&:focus-visible {
+		color: rgba $primary-color;
+		border-bottom: 1px solid $primary-color;
+	}
+
+	&:active {
+		color: $white-color;
+		border-bottom: 1px solid $white-color;
+	}
+
 	&--email {
 		margin: 0;
 		padding-bottom: 30px;

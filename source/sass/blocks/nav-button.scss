@@ -38,6 +38,7 @@
     top: 0;
     background-color: $blue-color;
   }
+  
   &--opened .nav-button__lines::after {
     transform: rotate(90deg);
     opacity: 0;

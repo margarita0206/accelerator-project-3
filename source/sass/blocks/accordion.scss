@@ -30,6 +30,40 @@
 	position: relative;
 	letter-spacing: -0.7px;
 
+	&:hover::before {
+		background-color: $blue-color;
+	}
+
+	&:hover::after {
+		
+	}
+
+	&:focus::before,
+	&:focus-visible::before {
+		background-color: $blue-color;
+	}
+
+	&:focus::after,
+	&:focus-visible::after {
+		
+	}
+
+	&:active::before {
+		background-color: $white-color;
+	}
+
+	&:active::after {
+		background-color: $active-color-button;
+	}
+
+	&:disabled::before {
+		background-color: $disabled-color;
+	}
+
+	&:hover::after {
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+
 	@media (min-width: $tablet-width) {
 		@include font($primary-font, 22px, 26px, $blue-color);
 
@@ -153,6 +187,33 @@
 
 .accordion__content.active {
 	display: block;
+
+	
+	&:hover::before {
+		background-color: $white-color;
+	}
+
+	&:hover::after {
+		background-color: $blue-color;
+	}
+
+	&:focus::before,
+	&:focus-visible::before {
+		background-color: $white-color;
+	}
+
+	&:focus::after,
+	&:focus-visible::after {
+		
+	}
+
+	&:active::before {
+		background-color: $blue-color;
+	}
+
+	&:active::after {
+		background-color: $white-color;
+	}
 
 	&::before {
 		display: none;
