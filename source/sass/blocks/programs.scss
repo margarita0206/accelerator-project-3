@@ -1,0 +1,86 @@
+.programs {
+	width: 320px;
+	padding: 50px 15px;
+	margin: 0 auto;
+
+	@media (min-width: $tablet-width) {
+		width: 768px;
+		padding: 50px 0 50px 45px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 1440px;
+		padding: 60px 100px;
+	}
+}
+
+.programs__title {
+	@include font($primary-font, 20px, 20px, $blue-color);
+
+	font-weight: 400;
+	margin: 0;
+	width: 115px;
+	margin-bottom: 35px;
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 34px, 50px, $blue-color);
+
+	  font-weight: 400;
+		width: 189px;
+		margin-bottom: 43px;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 50px, 50px, $blue-color);
+
+	  font-weight: 400;
+		width: 278px;
+		margin-bottom: 45px;
+	}
+}
+
+.programs__title-wrapper {
+	display: flex;
+}
+
+.programs__img {
+	display: block;
+	border-radius: 12px;
+}
+
+.programs__swiper-wrapper {
+	column-gap: 15px;
+	overflow: hidden;
+}
+
+.programs__info-wrapper {
+	width: 270px;
+}
+
+.programs__wrapper-link {
+	display: flex;
+}
+
+.programs__title-info {
+	@include font($primary-font, 16px, 18px, $blue-color);
+
+	font-weight: 400;
+	display: block;
+	margin: 0;
+	width: 146px;
+	padding: 18px 15px 6px 18px;
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 20px, 14px, $blue-color);
+
+	  font-weight: 400;
+		width: 173px;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 24px, 17px, $blue-color);
+
+	  font-weight: 400;
+		width: 194px;
+	}
+}
