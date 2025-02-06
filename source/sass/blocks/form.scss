@@ -327,7 +327,7 @@
 	mask-image: url("/__spritemap#sprite-arrow-down-view");
 	mask-repeat: no-repeat;
 	background-color: $white-color;
-	mask-size: 16px 16px;
+	mask-size: 16px 9px;
 	mask-position: center;
 	margin-top: 10px;
 	margin-left: 223px;
@@ -343,11 +343,11 @@
 	}
 
 	@media (min-width: $tablet-width) {
-		 margin-left: 325px;
+		margin-left: 325px;
 	}
 
 	@media (min-width: $desktop-width) {
-		 margin-left: 313px;
+		margin-left: 313px;
 	}
 }
 
