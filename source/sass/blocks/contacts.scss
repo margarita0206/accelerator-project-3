@@ -205,16 +205,16 @@
 }
 
 .contacts__map-wrapper {
-	width: 320px;
+	width: 290px;
 	margin: 0 auto;
 	margin-top: 30px;
 
 	@media (min-width: $tablet-width) {
-		width: 768px;
+		width: 678px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 1440px;
+		width: 1240px;
 		margin-top: 40px;
 	}
 }

@@ -1,16 +1,44 @@
 .programs {
 	width: 320px;
-	padding: 50px 15px;
+	padding: 50px 15px 63px;
 	margin: 0 auto;
 
 	@media (min-width: $tablet-width) {
 		width: 768px;
-		padding: 50px 0 50px 45px;
+		padding: 50px 0 49px 45px;
+	
 	}
 
 	@media (min-width: $desktop-width) {
 		width: 1440px;
 		padding: 60px 100px;
+	}
+}
+
+.programs__container {
+	@media (min-width: $tablet-width) {
+	  display: grid;
+	  grid-template-columns: 443px 399px;
+	  grid-template-rows: 54px 420px 23px;
+		row-gap: 40px;
+	}
+}
+
+.programs__swiper-scrollbar {
+	display: none;
+
+	@media (min-width: $tablet-width) {
+		display: block;
+		width: 562px;
+	}
+}
+
+.programs__scrollbar-wrapper {
+	@media (min-width: $tablet-width) {
+		margin-top: 502px;
+		width: 678px;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
@@ -20,14 +48,19 @@
 	font-weight: 400;
 	margin: 0;
 	width: 115px;
-	margin-bottom: 35px;
+	margin-top: 1px;
+	margin-bottom: 34px;
+	letter-spacing: -0.8px;
 
 	@media (min-width: $tablet-width) {
 		@include font($primary-font, 34px, 50px, $blue-color);
 
 	  font-weight: 400;
+		letter-spacing: -1.5px;
+		margin-top: 3px;
 		width: 189px;
-		margin-bottom: 43px;
+		margin-bottom: 41px;
+		grid-area: 1 / 4 / 2 / 2;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -41,6 +74,18 @@
 
 .programs__title-wrapper {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media (min-width: $tablet-width) {
+		display: block;
+	}
+}
+
+.programs__button-wrapper {
+	width: 52px;
+	display: flex;
+	column-gap: 8px;
 }
 
 .programs__img {
@@ -56,6 +101,7 @@
 	@media (min-width: $tablet-width) {
 		width: 723px;
 		column-gap: 30px;
+		grid-area: card;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -79,11 +125,13 @@
 .programs__info-wrapper {
 	width: 270px;
 	position: absolute;
-	top: 250px;
+	top: 271px;
 	left: 10px;
 
 	@media (min-width: $tablet-width) {
 		left: 20px;
+		width: 284px;
+		top: 285px;
 	}
 }
 
@@ -92,13 +140,13 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: $white-color;
-	border-radius: 0 15px 15px 15px;
+	border-radius: 0 12px 12px 12px;
 	margin-top: -1px;
-	padding: 12px 21px 15px 18px;
+	padding: 13px 18px 14px 18px;
 
 	@media (min-width: $tablet-width) {
 		width: 284px;
-		padding: 12px 30px 15px 18px;
+		padding: 12px 18px 15px 18px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -110,7 +158,9 @@
 	  @include font($primary-font, 12px, 14px, $primary-font);
 
 	  font-weight: 400;
+		letter-spacing: -0.4px;
 		width: 188px;
+		margin: 0;
 		padding-right: 5px;
 
 
@@ -136,12 +186,13 @@
 	@include font($primary-font, 16px, 18px, $blue-color);
 
 	font-weight: 400;
+	letter-spacing: -0.6px;
 	display: block;
 	margin: 0;
 	width: 146px;
-	padding: 18px 15px 6px 18px;
+	padding: 18px 15px 7px 18px;
 	background-color: $white-color;
-	border-radius: 15px 15px 0 0;
+	border-radius: 12px 12px 0 0;
 
 	&::before {
 		content: "";
@@ -154,7 +205,7 @@
 		mask-size: 18px 18px;
 		mask-repeat: no-repeat;
 		mask-position: center;
-		right: 107px;
+		right: 106px;
 		top: 24px;
 	}
 
@@ -163,10 +214,11 @@
 
 	  font-weight: 400;
 		width: 173px;
+		padding: 19px 15px 6px 18px;
 
 		&::before {
 			top: 20px;
-			right: 80px;
+			right: 93px;
 		}
 	}
 
@@ -188,7 +240,6 @@
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
-	margin-top: 17px;
 
 	&::after {
 		content: "";
@@ -198,7 +249,102 @@
 		height: 30px;
 		background-color: $blue-color;
 		border-radius: 50%;
-		top: 53%;
+		top: 54%;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+    width: 10px;
+		height: 10px;
+		z-index: 1;
+		background-color: $white-color;
+		mask-image: url("/__spritemap#sprite-arrow-view");
+		mask-size: 9px 9px;
+    mask-repeat: no-repeat;
+		mask-position: center;
+		bottom: 32px;
+		right: 28px;
+	}
+
+	@media (min-width: $tablet-width) {
+		&::after {
+			top: 52%;
+		}
+
+		&::before {
+			bottom: 40px;
+		}
+	}
+
+	&:hover {
+		&::after {
+			background-color: $white-color;
+		}
+
+		&::before {
+      background-color: $blue-color;
+			transform: rotate(45deg);
+		}
+	}
+
+	&:focus,
+		&:focus-visible {
+			&::before {
+				transform: rotate(45deg);
+			}
+		}
+
+		&:active {
+			&::after {
+				background-color: $white-color;
+			}
+	
+			&::before {
+				background-color: rgba(49, 109, 194, 0.7);
+				transform: rotate(45deg);
+			}
+		}
+
+		&:disabled {
+			&::after {
+				background-color: $disabled-color;
+			}
+	
+			&::before {
+				background-color: rgba(255, 255, 255, 0.6);
+			}
+		}
+}
+
+.programs__wrapper-container {
+	margin-bottom: 41px;
+}
+
+.programs__link {
+	@include font($primary-font, 12px, 12px, $blue-color);
+
+	font-weight: 500;	
+	width: 205px;
+	padding: 13px 68px 12px 31px;
+	border: 1px solid $blue-color;
+	letter-spacing: -0.4px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 30px; 
+	position: relative;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+    width: 34px;
+		height: 34px;
+		background-color: $blue-color;
+		border-radius: 50%;
+		right: 4px;
+		top: 4px;
 	}
 
 	&::before {
@@ -213,7 +359,80 @@
 		mask-size: 10px 10px;
     mask-repeat: no-repeat;
 		mask-position: center;
-		bottom: 43px;
-		right: 31px;
+		top: 16px;
+		right: 15px;
 	}
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 14px, 14px, $blue-color);
+	
+		font-weight: 500;
+		width: 234px;
+		grid-area: 1 / 2 / 1 / 2;
+		align-content: center;
+		padding: 16px 81px 17px 31px;
+		margin-top: -2px;
+
+		&::after {
+			width: 46px;
+			height: 46px;
+			right: 3px;
+		}
+
+		&::before {
+			width: 11px;
+			height: 11px;
+			right: 20px;
+			top: 21px;
+		}
+	}
+
+	&:hover {
+		color: $white-color;
+		background-color: $blue-color;
+
+		&::after {
+			background-color: $white-color;
+		}
+
+		&::before {
+      background-color: $blue-color;
+			transform: rotate(45deg);
+		}
+	}
+
+	&:focus,
+		&:focus-visible {
+			&::before {
+				transform: rotate(45deg);
+			}
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.7);
+			background-color: $blue-color;
+	
+			&::after {
+				background-color: $white-color;
+			}
+	
+			&::before {
+				background-color: rgba(49, 109, 194, 0.7);
+				transform: rotate(45deg);
+			}
+		}
+
+		&:disabled {
+			color: $disabled-color;
+			background-color: $primary-fon;
+			border: 1px solid $disabled-color;
+	
+			&::after {
+				background-color: $disabled-color;
+			}
+	
+			&::before {
+				background-color: rgba(255, 255, 255, 0.6);
+			}
+		}
 }
