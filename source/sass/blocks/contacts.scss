@@ -26,7 +26,7 @@
 .contacts__wrapper {
 	width: 320px;
 	margin: 0 auto;
-	padding: 75px 15px 70px;
+	padding: 76px 15px 70px;
 
 	@media (min-width: $tablet-width) {
 		padding: 100px 45px;
@@ -80,11 +80,11 @@
 
 	font-weight: 400;
 	margin: 0;
-	letter-spacing: 0.1;
+	letter-spacing: 0.12px;
 	text-transform: uppercase;
 	display: inline-block;
 	opacity: 0.8;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 24px;
@@ -136,6 +136,10 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 
+	&--email {
+		margin-top: 1px;
+	}
+
 	@media (min-width: $tablet-width) {
 	  &--contacts {
 		  width: 401px;
@@ -155,7 +159,7 @@
 	font-weight: 400;
 	margin: 0;
 	text-decoration: none;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 0;

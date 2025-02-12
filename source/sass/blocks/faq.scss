@@ -1,4 +1,4 @@
-.faq {
+.faq__container {
 	width: 320px;
   padding: 50px 15px;
 	margin: 0 auto;
@@ -11,18 +11,6 @@
 	@media (min-width: $desktop-width) {
 		width: 1440px;
 		padding: 60px 206px;
-	}
-}
-
-.faq__container {
-	width: 290px;
-
-	@media (min-width: $tablet-width) {
-		width: 678px;
-	}
-
-	@media (min-width: $desktop-width) {
-		width: 1028px;
 	}
 }
 
@@ -49,5 +37,235 @@
 	  font-weight: 400;
 		margin-bottom: 60px;
 		width: 427px;
+	}
+}
+
+.faq__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+	gap: 10px;
+}
+
+.faq__item {
+	border-radius: 14px;
+  border: 2px solid $blue-color;
+  color: $blue-color;
+  padding: 20px 15px;
+  cursor: pointer;
+
+	@media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+  }
+
+	&--active {
+    background-color: $blue-color;
+    color: $white-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $white-color;
+    color: $blue-color;
+  }
+
+  &:active {
+    background-color: $white-color;
+    color: $active-color-button;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    color: $primary-fon;
+    border: 2px solid $primary-fon;
+    background-color: $white-color;
+    cursor: not-allowed;
+  }
+}
+
+.faq__item p {
+	@include font($primary-font, 16px, 18px, $primary-fon);
+
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 16px, 20px, $primary-fon);
+
+		font-weight: 400;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 16px, 26px, $primary-fon);
+
+		font-weight: 400;
+	}
+}
+
+.faq__item br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.faq__item--active p {
+  height: auto;
+  padding-top: 20px;
+}
+
+.faq__item--active .faq__button {
+  background-color: $white-color;
+  color: $blue-color;
+
+  &::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: none;
+    height: 2px;
+    width: 18px;
+    background-color: $blue-color;
+  }
+}
+
+.faq__item:focus .faq__button,
+.faq__item:hover .faq__button {
+  border: 1px solid $blue-color;
+  outline: none;
+  background-color: $white-color;
+
+  &::after {
+    background-color: $blue-color;
+  }
+}
+
+.faq__item:active .faq__button {
+  border: 1px solid $blue-color;
+  outline: none;
+  background-color: $active-color-button;
+
+  &::after {
+    background-color: $white-color;
+  }
+}
+
+.faq__item--active:focus,
+.faq__item--active:hover {
+  background-color: $blue-color;
+  color: $white-color;
+}
+
+.faq__item--active:focus .faq__button,
+.faq__item--active:hover .faq__button {
+  background-color: $blue-color;
+  color: $white-color;
+  border: 1px solid $white-color;
+
+  &::after {
+    background-color: $white-color;
+  }
+}
+
+.faq__item--active:active {
+  background-color: $active-color-button;
+  color: $white-color;
+}
+
+.faq__item--active:active .faq__button {
+  background-color: $white-color;
+
+  &::after {
+    background-color: $blue-color;
+  }
+}
+
+.faq__item--disabled:hover,
+.faq__item--disabled:focus,
+.faq__item--disabled:active {
+  opacity: 0.5;
+  color: $primary-fon;
+  border: 2px solid $primary-fon;
+  background-color: $white-color;
+}
+
+.faq__item--disabled .faq__button,
+.faq__item--disabled:hover .faq__button,
+.faq__item--disabled:focus .faq__button,
+.faq__item--disabled:active .faq__button {
+  background-color: $white-color;
+  border: 1px solid $primary-fon;
+
+  &::after {
+    background-color: $primary-fon;
+  }
+}
+
+.faq__question-wrapper {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.faq__question {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+	display: block;
+	margin: 0;
+	width: 187px;
+
+	@media (min-width: $tablet-width) {
+		width: 564px;
+    font-size: 22px;
+    line-height: 26px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 894px;
+    font-size: 28px;
+    line-height: 34px;
+	}
+}
+
+.faq__button {
+	position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: $blue-color;
+
+	&::after {
+		content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: $white-color;
+    mask-image: url("/__spritemap#sprite-plus-view");
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: 50% 50%;
+    transition: all 0.5s;
 	}
 }

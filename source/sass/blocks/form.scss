@@ -103,7 +103,7 @@
 	font-weight: 400;
 	width: 270px;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 
 	@media (min-width: $tablet-width) {
 		@include font($primary-font, 16px, 20px, $white-color);
@@ -277,7 +277,7 @@
 }
 
 .form__select-wrapper {
-	width: 270px;
+	width: 260px;
 	min-height: 52px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 8px;
@@ -329,8 +329,8 @@
 	background-color: $white-color;
 	mask-size: 16px 9px;
 	mask-position: center;
-	margin-top: 10px;
-	margin-left: 223px;
+	margin-top: 9px;
+	margin-left: 215px;
 
 	&:active,
 	&:focus {
@@ -371,15 +371,15 @@
 	@include font($primary-font, 12px, 12px, $white-color);
 
 	font-weight: 400;
-	letter-spacing: 0.2;
+	letter-spacing: 0.24px;
 	text-transform: uppercase;
 	width: 260px;
-	padding: 16px 69px 16px 31px;
+	padding: 16px 69px 14px 31px;
 	min-height: 44px;
 	background-color: $blue-color;
 	border: 1px solid $white-color;
 	border-radius: 30px;
-	margin-top: 20px;
+	margin-top: 19px;
 
 	@media (min-width: $tablet-width) {
 		width: 352px;

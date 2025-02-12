@@ -283,7 +283,7 @@
           </div>
           <div class="programs__wrapper-container">
             <div class="programs__slider-wrapper">
-              <div class="programs__swiper swiper5">
+              <div class="programs__swiper swiper1">
                 <div class="programs__swiper-wrapper swiper-wrapper">
                   <div class="programs__wrapper swiper-slide">
                     <div class="programs__img-wrapper">
@@ -335,6 +335,32 @@
                         <p>Помогайте другим
                           и развивайте свои<br>
                           лидерские качества</p>
+                        <a class="programs__link-info" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="programs__wrapper swiper-slide">
+                    <div class="programs__img-wrapper">
+                      <picture>
+                        <source media="(min-width: 1440px)" width="392" height="420" type="image/webp"
+                        srcset="img/programs-desktop3@1x.webp 1x, img/programs-desktop3@2x.webp 2x">
+                        <source media="(min-width: 1440px)" width="392" height="420" type="image/jpg"
+                        srcset="img/programs-desktop3@1x.jpg 1x, img/programs-desktop3@2x.jpg 2x">
+                        <source media="(min-width: 768px)" width="324" height="420" type="image/webp"
+                        srcset="img/programs-tablet3@1x.webp 1x, img/programs-tablet3@2x.webp 2x">
+                        <source media="(min-width: 768px)" width="324" height="420" type="image/jpg"
+                        srcset="img/programs-tablet3@1x.jpg 1x, img/programs-tablet3@2x.jpg 2x">
+                        <source width="324" height="420" type="image/webp"
+                        srcset="img/programs-mobile3@1x.webp 1x, img/programs-mobile3@2x.webp 2x">
+                        <img class="programs__img" src="img/programs-mobile3@1x.jpg" width="324" height="420"
+                        srcset="img/programs-mobile3@2x.jpg 2x" alt="Женщины читают программы стажировок" fetchpriority="high">
+                      </picture>
+                    </div>
+                    <div class="programs__info-wrapper">
+                      <span class="programs__title-info">Учёба</span>
+                      <div class="programs__wrapper-link">
+                        <p>Получите образование и измените
+                          своё будущее.</p>
                         <a class="programs__link-info" href="#"></a>
                       </div>
                     </div>
@@ -421,49 +447,262 @@
         </div>
       </section>
 
-      <div data-test="news">news</div>
-
-      <section class="main__faq faq" data-test="FAQ">
-        <div class="faq__container">
-          <h3 class="faq__title">Вопросы и ответы</h3>
-          <div class="faq__accordion accordeon">
-            <ul class="accordion__list">
-              <li class="accordion__item">
-                <button class="accordion__button">Кто организатор? Какие сроки у программы?</button>
-                <div class="accordion__content">
-                  <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
+      <section class="main__news news" data-test="news">
+        <div class="news__wrapper">
+          <h2 class="news__title title">Новости и материалы</h2>
+          <div class="news__tabs-wrapper">
+            <ul class="news__tabs">
+              <li class="news__tab">
+                <button class="news__button news__button--current" data-tab="tab-1" type="button">общее</button>
+              </li>
+              <li class="news__tab">
+                <button class="news__button" data-tab="tab-2" type="button">Волонтёрство</button>
+              </li>
+              <li class="news__tab">
+                <button class="news__button" data-tab="tab-3" type="button">Стажировки</button>
+              </li>
+              <li class="news__tab">
+                <button class="news__button" data-tab="tab-4" type="button">Карьера</button>
+              </li>
+              <li class="news__tab">
+                <button class="news__button" data-tab="tab-5" type="button">путешествия</button>
+              </li>
+            </ul>
+          </div>
+          <div class="news__swiper swiper">
+            <ul class="news__list swiper-wrapper">
+              <li class="news__item swiper-slide news__item--interview news__item--big" tabindex="0">
+                <span class="news__date">23/03/2023</span>
+                <h3 class="news__heading">Интервью с участницей
+                  программы стажировки</h3>
+                <div class="news__text-wrapper">
+                  <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
                 </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__button">Что такое грант на обучение?</button>
-                <div class="accordion__content">
-                  <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
+              <li class="news__item swiper-slide news__item--trips" tabindex="0">
+                <span class="news__date">20/03/2023</span>
+                <h3 class="news__heading">Путешествуем по миру</h3>
+                <div class="news__text-wrapper">
+                  <p>Какие места посещают наши студенты весной</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
                 </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__button active">Как определяется стоимость программы?</button>
-                <div class="accordion__content active">
-                  <p>Полная стоимость определяется организаторами в зависимости
-                  от направления. В большинстве случаев грант «Стажировка»
-                  не покрывает полную стоимость программы, и поэтому
-                  предусматривается определённая доля личного участия.</p>
+              <li class="news__item swiper-slide news__item--volunteer" tabindex="0">
+                <span class="news__date">17/03/2023</span>
+                <h3 class="news__heading">Новая программа волонтёрства</h3>
+                <div class="news__text-wrapper">
+                  <p>Программа помощи детям длительностью 4 месяца</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
                 </div>
               </li>
-              <li class="accordion__item">
-                <button  class="accordion__button">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</button>
-                <div class="accordion__content">
-                  <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
+              <li class="news__item swiper-slide news__item--career" tabindex="0">
+                <span class="news__date">10/03/2023</span>
+                <h3 class="news__heading">Построй свою карьеру</h3>
+                <div class="news__text-wrapper">
+                  <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
                 </div>
               </li>
-              <li class="accordion__item">
-                <button class="accordion__button">Как выглядит полный
-                процесс регистрации на программу «Стажировка»?</button>
-                <div class="accordion__content">
-                  <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+              <li class="news__item swiper-slide news__item--interview" tabindex="0">
+                <span class="news__date">23/03/2023</span>
+                <h3 class="news__heading">Интервью с участницей
+                  программы стажировки</h3>
+                <div class="news__text-wrapper">
+                  <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--trips" tabindex="0">
+                <span class="news__date">20/03/2023</span>
+                <h3 class="news__heading">Путешествуем по миру</h3>
+                <div class="news__text-wrapper">
+                  <p>Какие места посещают наши студенты весной</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--volunteer" tabindex="0">
+                <span class="news__date">17/03/2023</span>
+                <h3 class="news__heading">Новая программа волонтёрства</h3>
+                <div class="news__text-wrapper">
+                  <p>Программа помощи детям длительностью 4 месяца</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--career" tabindex="0">
+                <span class="news__date">10/03/2023</span>
+                <h3 class="news__heading">Построй свою карьеру</h3>
+                <div class="news__text-wrapper">
+                  <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--interview" tabindex="0">
+                <span class="news__date">23/03/2023</span>
+                <h3 class="news__heading">Интервью с участницей
+                  программы стажировки</h3>
+                <div class="news__text-wrapper">
+                  <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--trips" tabindex="0">
+                <span class="news__date">20/03/2023</span>
+                <h3 class="news__heading">Путешествуем по миру</h3>
+                <div class="news__text-wrapper">
+                  <p>Какие места посещают наши студенты весной</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--volunteer" tabindex="0">
+                <span class="news__date">17/03/2023</span>
+                <h3 class="news__heading">Новая программа волонтёрства</h3>
+                <div class="news__text-wrapper">
+                  <p>Программа помощи детям длительностью 4 месяца</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--career" tabindex="0">
+                <span class="news__date">10/03/2023</span>
+                <h3 class="news__heading">Построй свою карьеру</h3>
+                <div class="news__text-wrapper">
+                  <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--interview news__item--big" tabindex="0">
+                <span class="news__date">23/03/2023</span>
+                <h3 class="news__heading">Интервью с участницей
+                  программы стажировки</h3>
+                <div class="news__text-wrapper">
+                  <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--trips" tabindex="0">
+                <span class="news__date">20/03/2023</span>
+                <h3 class="news__heading">Путешествуем по миру</h3>
+                <div class="news__text-wrapper">
+                  <p>Какие места посещают наши студенты весной</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--volunteer" tabindex="0">
+                <span class="news__date">17/03/2023</span>
+                <h3 class="news__heading">Новая программа волонтёрства</h3>
+                <div class="news__text-wrapper">
+                  <p>Программа помощи детям длительностью 4 месяца</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--career" tabindex="0">
+                <span class="news__date">10/03/2023</span>
+                <h3 class="news__heading">Построй свою карьеру</h3>
+                <div class="news__text-wrapper">
+                  <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--interview news__item--big" tabindex="0">
+                <span class="news__date">23/03/2023</span>
+                <h3 class="news__heading">Интервью с участницей
+                  программы стажировки</h3>
+                <div class="news__text-wrapper">
+                  <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--trips" tabindex="0">
+                <span class="news__date">20/03/2023</span>
+                <h3 class="news__heading">Путешествуем по миру</h3>
+                <div class="news__text-wrapper">
+                  <p>Какие места посещают наши студенты весной</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--volunteer" tabindex="0">
+                <span class="news__date">17/03/2023</span>
+                <h3 class="news__heading">Новая программа волонтёрства</h3>
+                <div class="news__text-wrapper">
+                  <p>Программа помощи детям длительностью 4 месяца</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </li>
+              <li class="news__item swiper-slide news__item--career" tabindex="0">
+                <span class="news__date">10/03/2023</span>
+                <h3 class="news__heading">Построй свою карьеру</h3>
+                <div class="news__text-wrapper">
+                  <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <a class="news__button-item button-item" href="#"><span class="visually-hidden">Подробнее</span></a>
                 </div>
               </li>
             </ul>
           </div>
+          <button class="news__swiper-button news__swiper-button--prev swiper-button swiper-button--prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="news__swiper-button news__swiper-button--next swiper-button swiper-button--next" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
+          <div class="news__pagination">
+          </div>
+        </div>
+      </section>
+
+      <section class="main__faq faq" data-test="FAQ">
+        <div class="faq__container">
+          <h3 class="faq__title">Вопросы и ответы</h3>
+            <ul class="faq__list  faq__list--active" id="tab-1">
+              <li class="faq__item" tabindex="0">
+                <div class="faq__question-wrapper">
+                  <h4 class="faq__question">Кто организатор? Какие сроки у программы?</h4>
+                  <button class="faq__button" type="button" tabindex="-1"><span
+                    class="visually-hidden">Развернуть/свернуть
+                    ответ.</span></button>
+                </div> 
+                <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
+              </li>
+              <li class="faq__item" tabindex="0">
+                <div class="faq__question-wrapper">
+                  <h4 class="faq__question">Что такое грант на обучение?</h4>
+                  <button class="faq__button" type="button" tabindex="-1"><span
+                    class="visually-hidden">Развернуть/свернуть
+                    ответ.</span></button>
+                </div>
+                <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
+              </li>
+              <li class="faq__item faq__item--active" tabindex="0">
+                <div class="faq__question-wrapper">
+                  <h4 class="faq__question">Как определяется стоимость программы?</h4>
+                  <button class="faq__button" type="button" tabindex="-1"><span
+                    class="visually-hidden">Развернуть/свернуть
+                    ответ.</span></button>
+                </div>
+                <p>Полная стоимость определяется организаторами в зависимости
+                  от направления. В большинстве случаев грант «Стажировка»
+                  не покрывает полную стоимость программы, и поэтому
+                  предусматривается определённая доля личного участия.</p>
+              </li>
+              <li class="faq__item" tabindex="0">
+                <div class="faq__question-wrapper">
+                  <h4 class="faq__question">Признаётся ли учёба в рамках проекта<br> для дальнейшего обучения?</h4>
+                  <button  class="faq__button" type="button" tabindex="-1"><span
+                    class="visually-hidden">Развернуть/свернуть
+                    ответ.</span></button>
+                </div>
+                <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
+              </li>
+              <li class="faq__item" tabindex="0">
+                <div class="faq__question-wrapper">
+                  <h4 class="faq__question">Как выглядит полный
+                  процесс регистрации на программу «Стажировка»?</h4>
+                  <button class="faq__button" type="button" tabindex="-1"><span
+                    class="visually-hidden">Развернуть/свернуть
+                    ответ.</span></button>
+                </div>
+                <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+              </li>
+            </ul>
         </div>
       </section>
 
@@ -512,13 +751,19 @@
                     </div>
                   </div>
                   <div class="reviews__otziv-wrapper">
-                    <span class="reviews__otziv">Я могу c уверенностью сказать, 
-                      что это был один из самых незабываемых опытов в жизни!</span>
-                    <p>Я рекомендую программу «Стажировка» всем студентам,
-                      желающим получить незабываемые впечатления. Сочетание
-                      путешествий, общения изначимой работы действительно отличает
-                      её от других программ, и я чувствую огромную благодарность
-                      за предоставленную мне возможность.</p>
+                    <span class="reviews__otziv">Я могу c уверенностью сказать,
+                      что это был один из самых
+                      незабываемых опытов в жизни!</span>
+                    <p>Я рекомендую программу
+                      «Стажировка» всем студентам,
+                      желающим получить незабываемые
+                      впечатления. Сочетание
+                      путешествий, общения и значимой
+                      работы действительно отличает
+                      её от других программ,<br> и я чувствую
+                      огромную благодарность<br>
+                      за предоставленную
+                      мне возможность.</p>
                   </div>
                 </div>
                 <div class="swiper-slide reviews__wrapper">
@@ -676,7 +921,7 @@
               </div>
               <div class="form__checkbox-wrapper">
                 <input type="checkbox" class="form__checkbox" name="checkbox" id="checkbox" required>
-                <label for="checkbox" class="form__label-checkbox">Я согласен на обработку моих персональных
+                <label for="checkbox" class="form__label-checkbox">Я согласен на обработку моих персональных<br>
                   данных</label>
               </div>
               <button class="form__button" type="post">Отправить</button>

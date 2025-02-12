@@ -1,16 +1,22 @@
-const acc = document.getElementsByClassName("accordion__button");
-let i;
+const accordeonPanelHeading = document.querySelectorAll('.faq__item');
+const isEnterKey = (evt) => evt.key === 'Enter';
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
+const accordionCLicked = () => {
+  for (let i = 0; i < accordeonPanelHeading.length; i++) {
+    accordeonPanelHeading[i].addEventListener('click', () => {
+      accordeonPanelHeading[i].classList.toggle('faq__item--active');
+
+      if (accordeonPanelHeading[i].classList.contains('faq__item--disabled')) {
+        accordeonPanelHeading[i].classList.remove('faq__item--active');
+      }
     });
-}
-   
-export { acc };
+
+    accordeonPanelHeading[i].addEventListener('keydown', (evt) => {
+      if (isEnterKey(evt)) {
+        accordeonPanelHeading[i].classList.toggle('faq__item--active');
+      }
+    });
+  }
+};
+
+accordionCLicked();
