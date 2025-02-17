@@ -183,12 +183,12 @@
             </div>
             <div class="about__wrapper-goal">
               <h4>Наша цель</h4>
-              <b>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних
+              <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних
                 стадиях карьеры, предоставляя им инструменты для решения сложных
                 проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.
-              </b>
+              </p>
               <div class="about__button-wrapper">
-                <a class="about__link-button" href="">подробнее о проекте</a>
+                <button class="about__link-button" type="button">подробнее о проекте</a>
               </div>
             </div>
           </div>
@@ -425,20 +425,16 @@
             <p class="grant__p">Чтобы получить грант на обучение, вам нужно:</p>
             <ul class="grant__list">
               <li class="grant__item">
-                <p class="grant__number">1</p>
                 <p class="grant__text">Быть в возрасте от 16 до 30 лет</p>
               </li>
               <li class="grant__item">
-                <p class="grant__number">2</p>
                 <p class="grant__text">Иметь оконченное среднее образование</p>
               </li>
               <li class="grant__item">
-                <p class="grant__number">3</p>
                 <p class="grant__text">Иметь документально подтверждённое отсутствие
                   судимости и пройти консульскую проверку</p>
               </li>
               <li class="grant__item">
-                <p class="grant__number">4</p>
                 <p class="grant__text">За последние 2 года быть
                   не больше 3х месяцев подряд непрерывно в одной стране</p>
               </li>
@@ -722,9 +718,9 @@
               </div>
             </div>
           </div>
-            <div class="reviews__swiper swiper3">
+            <div class="reviews__swiper swiper2">
               <div class="reviews__swiper-wrapper swiper-wrapper">
-                <div class="swiper-slide reviews__wrapper">
+                <div class="reviews__wrapper swiper-slide" tabindex="0">
                   <div class="reviews__wrapper-info">
                     <div class="reviews__avatar">
                       <picture>
@@ -766,7 +762,7 @@
                       мне возможность.</p>
                   </div>
                 </div>
-                <div class="swiper-slide reviews__wrapper">
+                <div class="swiper-slide reviews__wrapper" tabindex="0">
                   <div class="reviews__wrapper-info">
                     <div class="reviews__avatar">
                       <picture>
@@ -803,7 +799,7 @@
                       инициативы.</p>
                   </div>
                 </div>
-                <div class="swiper-slide reviews__wrapper">
+                <div class="swiper-slide reviews__wrapper" tabindex="0">
                   <div class="reviews__wrapper-info">
                     <div class="reviews__avatar">
                       <picture>
@@ -890,42 +886,44 @@
       </section>
 
       <section class="main__form form" data-test="form">
-        <div class="form__container">
-          <h2 class="form__title">Напишите нам</h2>
-          <p class="form__paragraph">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-          <div class="form__wrapper">
-            <form class="form__form-question" method="post" action="https://echo.htmlacademy.ru">
-              <div class="form__input-wrapper">
-                <label class="form__label" for="name">Имя</label>
-                <input class="form__input" type="text" name="name" required>
-              </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="tel">Телефон</label>
-                <input class="form__input" type="tel" name="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="13" required>
-              </div>
-              <div class="form__input-wrapper">
-                <label class="form__label form__label-texarea" id="sms">Ваше сообщение</label>
-                <textarea class="form__text" name="text" id="sms"></textarea>
-              </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="city-select">Выберите город</label>
-                <div class="form__select-wrapper">
-                  <select class="form__select" name="city" id="city-select">
-                    <option value=""></option>
-                    <option value="Saint-Petersburg">Санкт-Петербург</option>
-                    <option value="Moskow">Москва</option>
-                    <option value="Petrozavodsk">Петрозаводск</option>
-                    <option value="Volgograd">Волгоград</option>
-                  </select>
+        <div class="form__container-wrapper">
+          <div class="form__container">
+            <h2 class="form__title">Напишите нам</h2>
+            <p class="form__paragraph">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <div class="form__wrapper">
+              <form class="form__form-question" method="post" action="https://echo.htmlacademy.ru">
+                <div class="form__input-wrapper">
+                  <label class="form__label" for="name">Имя</label>
+                  <input class="form__input" type="text" name="name" pattern="[а-яА-ЯёЁa-zA-Z\s]+" required>
                 </div>
-              </div>
-              <div class="form__checkbox-wrapper">
-                <input type="checkbox" class="form__checkbox" name="checkbox" id="checkbox" required>
-                <label for="checkbox" class="form__label-checkbox">Я согласен на обработку моих персональных<br>
-                  данных</label>
-              </div>
-              <button class="form__button" type="post">Отправить</button>
-            </form>
+                <div class="form__input-wrapper">
+                  <label class="form__label" for="tel">Телефон</label>
+                  <input class="form__input" type="tel" name="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" minlength="11" maxlength="13" required>
+                </div>
+                <div class="form__input-wrapper form__input-wrapper--text">
+                  <label class="form__label " id="sms">Ваше сообщение</label>
+                  <textarea class="form__text" name="text" id="sms"></textarea>
+                </div>
+                <div class="form__input-wrapper">
+                  <label class="form__label form__label--select" for="city-select">Выберите город</label>
+                  <div class="form__select-wrapper">
+                    <select class="form__select" name="city" id="city-select">
+                      <option value=""></option>
+                      <option value="Saint-Petersburg">Санкт-Петербург</option>
+                      <option value="Moskow">Москва</option>
+                      <option value="Petrozavodsk">Петрозаводск</option>
+                      <option value="Volgograd">Волгоград</option>
+                    </select>
+                  </div>
+                </div>
+                <label class="form__control">
+                  <input class="form__control-input visually-hidden" type="checkbox" name="policy" required>
+                  <span class="form__control-mark"></span>
+                  <span class="form__control-label">Я согласен на обработку моих персональных<br> данных</span>
+                </label>
+                <button class="form__button" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

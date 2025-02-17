@@ -3,9 +3,9 @@
 	height: 22px;
 	border: none;
 	background-color: $primary-fon;
-		cursor: pointer;
-		position: relative;
-		transition: border 0.3s cubic-bezier(0.4, 0, 0.4, 1), background 0.3s cubic-bezier(0.4, 0, 0.4, 1);
+	cursor: pointer;
+	position: relative;
+	transition: border 0.3s cubic-bezier(0.4, 0, 0.4, 1), background 0.3s cubic-bezier(0.4, 0, 0.4, 1);
 	
 		&:hover {
 			background: $primary-fon;
@@ -28,7 +28,7 @@
 	
 		&:active {
 			border-radius: 50%;
-			background-color: rgba(255, 255, 255, 0.7);
+			background-color: $white-color;
 			width: 22px;
 			height: 22px;
 		}
@@ -44,7 +44,11 @@
 			width: 22px;
 			height: 22px;
 			background-color: $blue-color;
-			top: 4px;
+			top: 5px;
+
+			@media (min-width: $tablet-width) {
+				top: 8px;
+			}
 		}
 	
 		&--prev::after {
@@ -57,6 +61,11 @@
 			mask-image: url("/__spritemap#sprite-arrow-right-view");
 			mask-repeat: no-repeat;
 			mask-size: 10px 10px;
+			top: 5px;
+
+			@media (min-width: $tablet-width) {
+				top: 8px;
+			}
 		}
 	
 		&:disabled {

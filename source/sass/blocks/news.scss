@@ -1,33 +1,42 @@
 .news__wrapper {
   position: relative;
   width: 320px;
-  padding: 50px 0;
+  padding: 33px 0 40px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 50px 45px;
+    padding: 22px 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 60px 100px;
+    padding: 18px 100px;
   }
 }
 
 
 .news__title {
+  @include font($primary-font, 20px, 20px, $blue-color);
+
+	font-weight: 400;
   text-align: center;
   padding: 0 15px;
   padding-top: 1px;
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
+    @include font($primary-font, 34px, 50px, $blue-color);
+
+	  font-weight: 400;
     padding: 0;
     margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    @include font($primary-font, 50px, 50px, $blue-color);
+
+	  font-weight: 400;
     margin-bottom: 40px;
   }
 }
@@ -293,6 +302,7 @@
   }
 
   &--trips {
+    margin-top: 21px;
     background-image:
       image-set(url("../../img/news-mobile2@1x.webp") type("image/webp") 1x,
       url("../../img/news-mobile2@2x.webp") type("image/webp") 2x,
@@ -305,6 +315,10 @@
         url("../../img/news-tablet2@2x.webp") type("image/webp") 2x,
         url("../../img/news-tablet2@1x.jpg") type("image/jpeg") 1x,
         url("../../img/news-tablet2@2x.jpg") type("image/jpeg") 2x);
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
     }
   }
 
@@ -344,7 +358,7 @@
 .news__swiper-button {
   &--prev {
     position: absolute;
-    bottom: 52px;
+    bottom: 40px;
     left: 15px;
 
     @media (min-width: $tablet-width) {
@@ -354,11 +368,23 @@
 
   &--next {
     position: absolute;
-    bottom: 52px;
+    bottom: 40px;
     right: 15px;
 
     @media (min-width: $tablet-width) {
       right: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 24px;
+
+    &--next {
+      right: 100px;
+    }
+
+    &--prev {
+      left: 100px;
     }
   }
 }
@@ -404,14 +430,14 @@
 
   &::after {
     content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  mask-image: url("../../img/sprite/angle.svg");
-  mask-size: 16px 16px;
-  mask-repeat: no-repeat;
-  background-color: inherit;
-  z-index: 2;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    mask-image: url("../../img/sprite/angle.svg");
+    mask-size: 16px 16px;
+    mask-repeat: no-repeat;
+    background-color: inherit;
+    z-index: 2;
     bottom: 0;
     right: -16px;
   }
@@ -562,6 +588,11 @@
   margin: 0 auto;
   overflow-y: hidden;
   scrollbar-width: none;
+
+  @media (min-width: $desktop-width) {
+    width: 188px;
+    gap: 20px;
+  }
 }
 
 
@@ -589,5 +620,10 @@
 
   &--hidden {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
   }
 }

@@ -1,6 +1,6 @@
 .grant {
 	min-width: 320px;
-	padding: 70px 15px;
+	padding: 71px 15px 70px;
 	background-color: $blue-color;
 
 	@media (min-width: $tablet-width) {
@@ -10,7 +10,7 @@
 
 	@media (min-width: $desktop-width) {
 		min-width: 1440px;
-		padding: 120px 206px 120px 100px;
+		padding: 120px 206px 119px 100px;
 	}
 }
 
@@ -35,7 +35,7 @@
 
 	font-weight: 400;
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 	width: 290px;
 
 	@media (min-width: $tablet-width) {
@@ -51,33 +51,6 @@
 
 	  font-weight: 400;
 		margin-bottom: 30px;
-	}
-}
-
-.grant__item {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin-bottom: 15px;
-	border: 1px solid $primary-fon;
-	border-radius: 15px;
-	padding: 25px 26px;
-	width: 275px;
-
-	&:last-of-type {
-		margin-bottom: 0;
-	}
-
-	@media (min-width: $tablet-width) {
-    width: 305px;
-		padding: 31px 24px 61px 26px;
-		margin: 0;
-	}
-
-	@media (min-width: $desktop-width) {
-    width: 498px;
-		padding: 31px 26px 31px 26px;
-		margin-bottom: 23px;
 	}
 }
 
@@ -99,7 +72,7 @@
 		}
 	
 		@media (min-width: $desktop-width) {
-			@include font($primary-font, 16px, 24px, $white-color);
+			@include font($primary-font, 16px, 26px, $white-color);
 	
 			font-weight: 400;
 		}
@@ -109,10 +82,10 @@
 .grant__img {
 	border-radius: 18px;
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 
 	@media (min-width: $tablet-width) {
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 	}
 }
 
@@ -120,7 +93,7 @@
 	@include font($primary-font, 18px, 22px, $white-color);
 
 	font-weight: 400;
-	margin: 0 0 25px;
+	margin: 0 0 30px;
 	width: 210px;
 
 	@media (min-width: $tablet-width) {
@@ -128,7 +101,7 @@
 
 		font-weight: 400;
 		width: 636px;
-		margin: 0 0 30px;
+		margin: 0 0 45px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -136,7 +109,7 @@
 
 		font-weight: 400;
 		width: 493px;
-		margin-bottom: 45px;
+		margin-bottom: 55px;
 	}
 }
 
@@ -166,42 +139,79 @@
 	margin: 0;
 	padding: 0;
 	width: 290px;
+	margin-left: 15px;
 
 	@media (min-width: $tablet-width) {
 		width: 678px;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 25px 48px;
+		margin-left: 20px;
 	}
 
 	@media (min-width: $desktop-width) {
 		width: 498px;
 		display: block;
+		margin: 0 0 0 20px;
 	}
 }
 
-.grant__number {
-	@include font($primary-font, 18px, 18px, $white-color);
+.grant__wrapper-list {
+	@media (min-width: $desktop-width) {
+		width: 498px;
+		margin-top: 10px;
+	}
+}
 
-	font-weight: 500;
+.grant__item {
+	list-style-type: none;
 	margin: 0;
-	text-align: left;
-	padding: 7px 15px;
-	width: min-content;
-	background-color: $blue-color;
-	top: -5px;
-	left: -18px;
-	overflow-wrap: break-word;
-	margin-top: -35px;
-	margin-left: -40px;
+	padding: 0;
+	margin-bottom: 15px;
+	border: 1px solid $primary-fon;
+	border-radius: 15px;
+	padding: 24px 20px 24px 25px;
+	width: 275px;
+	position: relative;
+	counter-increment: number;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 
 	@media (min-width: $tablet-width) {
-		@include font($primary-font, 22px, 22px, $white-color);
+    width: 305px;
+		padding: 30px 25px;
+		margin: 0;
+	}
+
+	@media (min-width: $desktop-width) {
+    width: 478px;
+		margin-bottom: 23px;
+	}
+
+	&::before {
+		@include font($primary-font, 18px, 18px, $white-color);
 
 	  font-weight: 500;
-		letter-spacing: 1px;
-		padding: 10px 20px;
-		margin-top: -45px;
-	  margin-left: -50px;
+	  content: counter(number);
+	  position: absolute;
+	  margin: 0;
+	  text-align: left;
+	  padding: 7px 10px;
+	  width: min-content;
+	  background-color: $blue-color;
+	  top: -7px;
+	  left: -13px;
+	  overflow-wrap: break-word;
+
+		@media (min-width: $tablet-width) {
+			@include font($primary-font, 22px, 22px, $white-color);
+
+	  font-weight: 500;
+			top: -12px;
+			left: -19px;
+			padding: 7px 12px;
+		}
 	}
 }

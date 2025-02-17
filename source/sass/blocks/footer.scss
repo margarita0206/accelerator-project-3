@@ -16,7 +16,6 @@
 	}
 }
 
-
 .footer__container-wrapper {
 	margin: 0 auto;
 
@@ -58,10 +57,18 @@
 
 	@media (min-width: $tablet-width) {
 		flex-direction: row;
-		row-gap: 15px;
+		column-gap: 15px;
 		width: 528px;
 		padding: 16px 0;
+		justify-content: flex-end;
+		margin-left: -2px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 603px;
 		justify-content: space-between;
+		margin-left: -1px;
+		padding: 17px 0 16px;
 	}
 }
 
@@ -76,6 +83,14 @@
 	flex-wrap: wrap;
 	column-gap: 30px;
 	justify-content: center;
+
+	@media (min-width: $tablet-width) {
+		column-gap: 15px;
+	}
+
+	@media (min-width: $desktop-width) {
+		column-gap: 30px;
+	}
 }
 
 .footer__item{
@@ -96,12 +111,43 @@
 	}
 }
 
+.footer__link {
+	@include font($primary-font, 14px, 20px, $primary-color);
+
+	font-weight: 400;
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 16px, 20px, $primary-color);
+
+	  font-weight: 400;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 16px, 17px, $primary-color);
+
+	  font-weight: 400;
+	}
+}
+
 .footer__link-text {
 	@include font($primary-font, 12px, 14px, $primary-color);
 
 	font-weight: 400;
 	text-decoration: none;
 	border-bottom: 1px solid $primary-color;
+	
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 12px, 12px, $primary-color);
+
+	  font-weight: 400;
+		margin-bottom: -4px;
+	}
+
+	@media (min-width: $desktop-width) {
+		@include font($primary-font, 14px, 18px, $primary-color);
+
+	  font-weight: 400;
+	}
 	
 	&:hover {
 		color: $blue-color;
@@ -132,14 +178,15 @@
 	@media (min-width: $tablet-width) {
     text-align: left;
 		grid-area: text;
-		margin-top: 25px;
+		margin-top: 18px;
+		margin-bottom: 11px;
 	}
 
 	@media (min-width: $desktop-width) {
 		display: block;
     grid-area: text2;
-		margin-top: 20px;
-		margin-left: 343px;
+		margin-top: 23px;
+		margin-left: 321px;
 	}
 }
 
@@ -153,14 +200,21 @@
 	margin-bottom: 14px;
 
 	@media (min-width: $tablet-width) {
+		@include font($primary-font, 12px, 12px, $primary-color);
+
+	  font-weight: 400;
+		margin-bottom: 10px;
     text-align: left;
 		grid-area: text2;
 	}
 
 	@media (min-width: $desktop-width) {
+		@include font($primary-font, 14px, 18px, $primary-color);
+
+	  font-weight: 400;
     grid-area: text;
 		opacity: 1;
-		margin-top: 25px;
+		margin-top: 26px;
 	}
 }
 
@@ -178,6 +232,8 @@
 	@media (min-width: $desktop-width) {
     grid-area: logo;
 		column-gap: 52px;
+		margin-left: 0px;
+		width: 707px;
 	}
 }
 

@@ -1,6 +1,6 @@
 .faq__container {
 	width: 320px;
-  padding: 50px 15px;
+  padding: 51px 15px;
 	margin: 0 auto;
 
 	@media (min-width: $tablet-width) {
@@ -10,7 +10,7 @@
 
 	@media (min-width: $desktop-width) {
 		width: 1440px;
-		padding: 60px 206px;
+		padding: 71px 206px;
 	}
 }
 
@@ -19,7 +19,7 @@
 
 	font-weight: 400;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	width: 290px;
 	text-align: center;
 
@@ -35,8 +35,9 @@
 		@include font($primary-font, 50px, 50px, $blue-color);
 
 	  font-weight: 400;
-		margin-bottom: 60px;
+		margin-bottom: 71px;
 		width: 427px;
+    letter-spacing: 0;
 	}
 }
 
@@ -91,7 +92,7 @@
 }
 
 .faq__item p {
-	@include font($primary-font, 16px, 18px, $primary-fon);
+	@include font($primary-font, 14px, 20px, $primary-fon);
 
 	font-weight: 400;
 	margin: 0;
