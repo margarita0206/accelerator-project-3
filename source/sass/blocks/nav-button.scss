@@ -19,8 +19,6 @@
   transition: 0.3s color $smooth, 0.3s background-color $smooth, flex-grow 0.3s $fast;
   position: relative;
 
-  // background: conic-gradient( from 70deg , $white 0% var(--white-percentage), $additional var(--white-percentage) 100%);
-
   &--opened {
     flex-grow: 2;
     color: $white-color;
@@ -199,4 +197,13 @@
 
 .nav-button--disabled .nav-button__figure {
   background-color: $disabled-color;
+}
+
+.nav-button__text {
+  @include font($primary-font, 14px, 14px, $blue-color);
+
+	font-weight: 500;
+  display: inline-block;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
 }

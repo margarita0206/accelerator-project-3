@@ -4,12 +4,14 @@
 // import 'swiper/css';
 import { initSwipers } from './swiper';
 import { handleFormValidation } from './modal';
+import { handleNavMenuControls } from './nav';
 import './accordion';
 import './news';
 import './tabs';
 
 initSwipers();
 handleFormValidation();
+handleNavMenuControls();
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
