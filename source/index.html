@@ -173,7 +173,7 @@
       </div>
     </section>
     <main class="page-body__main main">
-      <section class="main__about about" data-test="about">
+      <section class="main__about about" id="about" data-test="about">
         <div class="about__container">
           <div class="abour__wrapper-info">
             <div class="about__wrapper-text">
@@ -257,7 +257,7 @@
               <input class="modal__input modal__input--check" type="checkbox" name="agree" id="agree" required>
               <label class="modal__input-title modal__input-title--check" for="agree" >Я согласен на обработку моих персональных данных</label>
             </div>
-            <button class="modal__button button" type="submit">
+            <button class="modal__button" type="submit">
               <span class="button__text">отправить</span>
               <span class="button__figure"></span>
             </button>
@@ -265,7 +265,7 @@
         </div>
       </section>
 
-      <section class="main__programs programs" data-test="programs">
+      <section class="main__programs programs" id="programs" data-test="programs">
         <div class="programs__container">
           <div class="programs__title-wrapper">
             <h3 class="programs__title">Программы</h3>
@@ -308,7 +308,7 @@
                         <p>Получите незаменимый опыт
                           работы в крупнейших мировых
                           компаниях.</p>
-                        <a class="programs__link-info" href="#"></a>
+                        <a class="programs__link-info" href="#"><span class="visually-hidden">Подробнее</span></a>
                       </div>
                     </div>
                   </div>
@@ -335,7 +335,7 @@
                         <p>Помогайте другим
                           и развивайте свои<br>
                           лидерские качества</p>
-                        <a class="programs__link-info" href="#"></a>
+                        <a class="programs__link-info" href="#"><span class="visually-hidden">Подробнее</span></a>
                       </div>
                     </div>
                   </div>
@@ -361,7 +361,7 @@
                       <div class="programs__wrapper-link">
                         <p>Получите образование и измените
                           своё будущее.</p>
-                        <a class="programs__link-info" href="#"></a>
+                        <a class="programs__link-info" href="#"><span class="visually-hidden">Подробнее</span>тзь</a>
                       </div>
                     </div>
                   </div>
@@ -399,7 +399,7 @@
         </div>
       </section>
 
-      <section class="main__grant grant" data-test="grant">
+      <section class="main__grant grant" id="grant" data-test="grant">
         <div class="grant__container">
           <div class="grant__wrapper">
             <h3 class="grant__title">Как поехать</h3>
@@ -443,7 +443,7 @@
         </div>
       </section>
 
-      <section class="main__news news" data-test="news">
+      <section class="main__news news" id="news" data-test="news">
         <div class="news__wrapper">
           <h2 class="news__title title">Новости и материалы</h2>
           <div class="news__tabs-wrapper">
@@ -702,7 +702,7 @@
         </div>
       </section>
 
-      <section class="main__reviews reviews" data-test="reviews">
+      <section class="main__reviews reviews" id="reviews" data-test="reviews">
         <div class="reviews__container-slide">
           <div class="reviews__title-wrapper">
             <h3 class="reviews__title">Отзывы</h3>
@@ -842,7 +842,7 @@
         </div>
       </section>
 
-      <section class="main__contacts contacts" data-test="contacts">
+      <section class="main__contacts contacts" id="contacts" data-test="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__container">
             <div class="contacts__title-wrapper">
@@ -938,24 +938,24 @@
           <div class="footer__list-wrapper">
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" id="about">О проекте</a>
+                <a class="footer__link" href="#about">О проекте</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" id="programs">Программы</a>
+                <a class="footer__link" href="#programs">Программы</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" id="grant">Как поехать</a>
+                <a class="footer__link" href="#grant">Как поехать</a>
               </li>
             </ul>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" id="reviews">Отзывы</a>
+                <a class="footer__link" href="#reviews">Отзывы</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" id="news">Новости</a>
+                <a class="footer__link" href="#news">Новости</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" id="contacts">Контакты</a>
+                <a class="footer__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </div>

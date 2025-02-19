@@ -26,6 +26,7 @@
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .modal__form {
@@ -80,7 +81,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: $blue-color;
-    mask: url("/__spritemap#sprite-cross-view") center center no-repeat;
+    mask: url("/__spritemap#sprite-close-view") center center no-repeat;
   }
 }
 
@@ -168,7 +169,116 @@
 }
 
 .modal__button {
-  width: 100%;
+  @include font($primary-font, 12px, 12px, $blue-color);
+
+	font-weight: 500;	
+	border: 1px solid $blue-color;
+	letter-spacing: 2%;
+	border-radius: 30px;
+	width: 223px;
+  padding: 10px 50px 10px 0;
+	min-height: 44px;
+	text-decoration: none;
+	text-transform: uppercase;
+  position: relative;
+
+	@media (min-width: $tablet-width) {
+		@include font($primary-font, 14px, 14px, $blue-color);
+
+		font-weight: 500;
+		letter-spacing: 2%;
+		width: 194px;
+		min-height: 54px;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+    width: 34px;
+		height: 34px;
+		background-color: $blue-color;
+		border-radius: 50%;
+		right: 3px;
+		top: 3px;
+
+		@media (min-width: $tablet-width) {
+			width: 46px;
+			height: 46px;
+		}
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+    width: 10px;
+		height: 10px;
+		z-index: 1;
+		background-color: $white-color;
+		mask-image: url("/__spritemap#sprite-arrow-view");
+		mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+		mask-position: center;
+		top: 15px;
+		right: 14px;
+
+		@media (min-width: $tablet-width) {
+			width: 10px;
+			height: 10px;
+			top: 22px;
+			right: 21px;
+		}
+	}
+
+	&:hover {
+		color: $white-color;
+		background-color: $blue-color;
+
+		&::after {
+			background-color: $white-color;
+		}
+
+		&::before {
+      background-color: $blue-color;
+			transform: rotate(45deg);
+		}
+	}
+
+	&:focus,
+		&:focus-visible {
+			&::before {
+				transform: rotate(45deg);
+			}
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.7);
+			background-color: $blue-color;
+	
+			&::after {
+				background-color: $white-color;
+			}
+	
+			&::before {
+				background-color: rgba(49, 109, 194, 0.7);
+				transform: rotate(45deg);
+			}
+		}
+
+		&:disabled {
+			color: $disabled-color;
+			background-color: $primary-fon;
+			border: 1px solid $disabled-color;
+	
+			&::after {
+				background-color: $disabled-color;
+			}
+	
+			&::before {
+				background-color: rgba(255, 255, 255, 0.6);
+			}
+		}
 }
 
 .modal__input-title--check {
@@ -332,10 +442,6 @@
   .modal__close-button {
     top: -40px;
     right: -50px;
-  }
-
-  .modal__button {
-    padding: 4px 5px 4px 30px;
   }
 }
 

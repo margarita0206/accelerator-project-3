@@ -3,7 +3,7 @@ import { formatPhoneNumber, validateInput, validatePhone, validateName } from '.
 
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.page-overlay');
-const modalOpenButton = document.querySelector('.about__button');
+const modalOpenButton = document.querySelector('.about__link-button');
 const modalCloseButton = document.querySelector('.modal__close-button');
 const form = modal.querySelector('.modal__form');
 const formInputs = form.querySelectorAll('.modal__input');

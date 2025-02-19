@@ -43,7 +43,7 @@
 
 .news__tabs-wrapper {
   overflow-y: hidden;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     overflow-y: auto;
@@ -69,6 +69,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +84,7 @@
   letter-spacing: 0.24px;
 
   &:first-child {
-    margin-right: 11px;
+    margin-right: 10px;
     letter-spacing: 0.32px;
   }
 
@@ -96,7 +97,7 @@
     letter-spacing: 0.28px;
 
     &:first-child {
-      margin-right: 9px;
+      margin-right: 3px;
       letter-spacing: 0.37px;
     }
 
@@ -111,23 +112,22 @@
 }
 
 .news__button {
+  @include font($primary-font, 12px, 12px, rgba(49, 109, 194, 0.6));
+
+	font-weight: 500;
   display: block;
   width: auto;
   border: none;
   background-color: inherit;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 12px;
   text-align: center;
   text-transform: uppercase;
-  padding: 12px 16px;
-  color: rgba(49, 109, 194, 0.6);
+  padding: 11px 17px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    padding: 16px 22px;
+    padding: 16px 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -246,6 +246,7 @@
   @media (min-width: $tablet-width) {
     min-height: 350px;
     background-size: 324px 350px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -363,6 +364,7 @@
 
     @media (min-width: $tablet-width) {
       left: 45px;
+      bottom: 28px;
     }
   }
 
@@ -373,6 +375,7 @@
 
     @media (min-width: $tablet-width) {
       right: 45px;
+      bottom: 28px;
     }
   }
 
@@ -562,23 +565,90 @@
   }
 }
 
-.news__button-item--disabled {
-  background-color: $disabled-color;
-  cursor: not-allowed;
+.news__button-item {
+  display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+  position: relative;
 
-  &::after {
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-}
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+    width: 30px;
+		height: 30px;
+		background-color: $blue-color;
+		border-radius: 50%;
+		top: 0;
+	}
 
-.news__button-item--disabled:hover {
-  background-color: $disabled-color;
-  cursor: not-allowed;
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+    width: 10px;
+		height: 10px;
+		z-index: 1;
+		background-color: $white-color;
+		mask-image: url("/__spritemap#sprite-arrow-view");
+		mask-size: 9px 9px;
+    mask-repeat: no-repeat;
+		mask-position: center;
+		bottom: 10px;
+		right: 11px;
+	}
 
-  &::after {
-    background-color: rgba(255, 255, 255, 0.6);
-    transform: translateY(-50%);
-  }
+	@media (min-width: $tablet-width) {
+		&::after {
+			top: 0;
+		}
+
+		&::before {
+			bottom: 10px;
+		}
+	}
+
+
+	&:hover {
+		&::after {
+			background-color: $white-color;
+		}
+
+		&::before {
+      background-color: $blue-color;
+			transform: rotate(45deg);
+		}
+	}
+
+	&:focus,
+		&:focus-visible {
+			&::before {
+				transform: rotate(45deg);
+			}
+		}
+
+		&:active {
+			&::after {
+				background-color: $white-color;
+			}
+	
+			&::before {
+				background-color: rgba(49, 109, 194, 0.7);
+				transform: rotate(45deg);
+			}
+		}
+
+		&:disabled {
+      cursor: not-allowed;
+			&::after {
+				background-color: $disabled-color;
+			}
+	
+			&::before {
+				background-color: rgba(255, 255, 255, 0.6);
+			}
+		}
 }
 
 .news__wrapper .news__pagination {
@@ -589,12 +659,11 @@
   overflow-y: hidden;
   scrollbar-width: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 188px;
     gap: 20px;
   }
 }
-
 
 .news__pagination .news__pagination-button {
   position: relative;
@@ -622,7 +691,7 @@
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 32px;
     height: 32px;
   }
