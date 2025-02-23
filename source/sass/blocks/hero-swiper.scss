@@ -4,15 +4,15 @@
   position: relative;
   overflow: hidden;
 
-	@media (min-width: $tablet-width) {
-		width: 768px;
+  @media (min-width: $tablet-width) {
+    width: 768px;
     height: 1024px;
-	}
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1440px;
+  @media (min-width: $desktop-width) {
+    width: 1440px;
     height: 800px;
-	}
+  }
 }
 
 .hero-swiper__swiper-wrapper {
@@ -32,15 +32,15 @@
   flex-shrink: 0;
   pointer-events: none;
 
-	@media (min-width: $tablet-width) {
-		height: 1024px;
+  @media (min-width: $tablet-width) {
+    height: 1024px;
     padding: 90px 64px 60px 45px;
-	}
+  }
 
-	@media (min-width: $desktop-width) {
-		height: 800px;
-    padding: 100px 100px 60px 100px;
-	}
+  @media (min-width: $desktop-width) {
+    height: 800px;
+    padding: 100px 100px 60px;
+  }
 }
 
 .hero-swiper__swiper-wrapper .swiper-slide-active {
@@ -50,7 +50,6 @@
 .hero-swiper__pagination {
   max-width: 90px;
   height: 29px;
-  transform: translateX(-132px);
   position: absolute;
   bottom: 339px;
   background-color: $white-color;
@@ -78,11 +77,10 @@
     mask: url("/__spritemap#sprite-angle-view") center center no-repeat;
   }
 
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     bottom: 330px;
     min-height: 40px;
     max-width: 100px;
-    transform: translateX(-70px);
 
     &::after {
       position: absolute;
@@ -94,11 +92,7 @@
       background-color: $white-color;
       mask: url("/__spritemap#sprite-angle-view") center center no-repeat;
     }
-	}
-
-	@media (min-width: $desktop-width) {
-		transform: translateX(0px);
-	}
+  }
 }
 
 .hero-swiper__pagination-bullet {
@@ -109,15 +103,15 @@
   transition: opacity 0.3s $smooth;
   cursor: pointer;
 
-	@media (min-width: $tablet-width) {
-		width: 25px;
+  @media (min-width: $tablet-width) {
+    width: 25px;
     height: 25px;
 
     &::before {
       width: 12px;
       height: 12px;
     }
-	}
+  }
 
   &--active::after {
     opacity: 0;
@@ -151,6 +145,7 @@
   &:active::before {
     background-color: $active-color-button;
   }
+
   &:active::after {
     background-color: $active-color-button;
   }
@@ -200,25 +195,25 @@
     pointer-events: none;
   }
 
-	@media (min-width: $tablet-width) {
-		width: 768px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1440px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .hero-swiper__picture {
   width: 320px;
 
-	@media (min-width: $tablet-width) {
-		width: 768px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1440px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .hero-swiper__content-wrapper {
@@ -226,15 +221,14 @@
   flex-flow: wrap;
   z-index: 1;
 
-	@media (min-width: $tablet-width) {
-	  display: grid;
+  @media (min-width: $tablet-width) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-	}
+  }
 }
 
 .hero-swiper__title {
   margin: 0;
-  position: relative;
   display: inline-flex;
   align-items: center;
   padding: 20px 25px 16px 14px;
@@ -271,8 +265,8 @@
     mask: url("/__spritemap#sprite-corner-mobile-bottom-small-view") center center no-repeat;
   }
 
-	@media (min-width: $tablet-width) {
-		grid-column: span 2;
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
     width: 659px;
     min-height: 142px;
     font-size: 36px;
@@ -285,19 +279,19 @@
       width: 26px;
       height: 26px;
       mask: url("/__spritemap#sprite-corner-bottom-view") center center no-repeat;
-		}
-	}
+    }
+  }
 
-	@media (min-width: $desktop-width) {
-		font-size: 54px;
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
     line-height: 62px;
     width: 968px;
-    padding: 40px 50px 30px 50px;
+    padding: 40px 50px 30px;
 
     &::after {
       right: 168px;
     }
-	}
+  }
 }
 
 .hero-swiper__cms-wrapper {
@@ -335,15 +329,16 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    padding: 0 14px 15px 14px;
+    padding: 0 14px 15px;
   }
 
-	@media (min-width: $tablet-width) {
-		min-height: 135px;
+  @media (min-width: $tablet-width) {
+    min-height: 135px;
     height: min-content;
     width: 325px;
     background-color: $white-color;
     border-bottom-left-radius: 30px;
+
     p {
       font-size: 16px;
       height: min-content;
@@ -380,24 +375,26 @@
     }
   }
 
-	@media (min-width: $desktop-width) {
-		min-height: 113px;
+  @media (min-width: $desktop-width) {
+    min-height: 113px;
+
     &::before {
       width: 775px;
     }
+
     p {
       width: 446px;
       font-size: 16px;
       line-height: 26px;
       padding: 0 0 35px 50px;
-      min-height: 78px;;
+      min-height: 78px;
 
       &::before {
         width: 775px;
         bottom: 0;
       }
     }
-	}
+  }
 }
 
 .hero-swiper__button-wrapper {
@@ -417,134 +414,135 @@
     border-bottom-right-radius: 14px;
   }
 
-	@media (min-width: $tablet-width) {
-		justify-self: flex-end;
+  @media (min-width: $tablet-width) {
+    justify-self: flex-end;
     align-self: flex-start;
     margin: 0 106px 0 0;
-	}
+  }
 
-	@media (min-width: $desktop-width) {
-	  margin: 0 243px 0 0;
+  @media (min-width: $desktop-width) {
+    margin: 0 243px 0 0;
   }
 }
 
 .hero-swiper__button {
   @include font($primary-font, 12px, 12px, $blue-color);
 
-	font-weight: 500;	
-	border: 1px solid $blue-color;
-	letter-spacing: 0.24px;
-	border-radius: 30px;
-	width: 154px;
+  font-weight: 500;
+  border: 1px solid $blue-color;
+  letter-spacing: 0.24px;
+  border-radius: 30px;
+  width: 154px;
   background-color: $white-color;
-	min-height: 44px;
-	padding: 16px 59px 16px 21px;
-	text-decoration: none;
-	text-transform: uppercase;
+  min-height: 44px;
+  padding: 16px 59px 16px 21px;
+  text-decoration: none;
+  text-transform: uppercase;
   position: relative;
+  cursor: pointer;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 14px, 14px, $blue-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 14px, 14px, $blue-color);
 
-		font-weight: 500;
-		letter-spacing: 0.28px;
-		padding: 22px 82px 22px 31px;
-		width: 198px;
-		min-height: 56px;
-	}
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    padding: 22px 82px 22px 31px;
+    width: 198px;
+    min-height: 56px;
+  }
 
   @media (min-width: $desktop-width) {
-		padding: 21px 81px 21px 31px;
-		width: 199px;
-		min-height: 58px;
-	}
+    padding: 21px 81px 21px 31px;
+    width: 199px;
+    min-height: 58px;
+  }
 
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
     width: 34px;
-		height: 34px;
-		background-color: $blue-color;
-		border-radius: 50%;
-		right: 4px;
-		top: 4px;
+    height: 34px;
+    background-color: $blue-color;
+    border-radius: 50%;
+    right: 4px;
+    top: 4px;
 
-		@media (min-width: $tablet-width) {
-			width: 46px;
-			height: 46px;
-		}
-	}
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
+  }
 
-	&::before {
-		content: "";
-		position: absolute;
-		display: block;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
     width: 10px;
-		height: 10px;
-		z-index: 1;
-		background-color: $white-color;
-		mask-image: url("/__spritemap#sprite-arrow-view");
-		mask-size: 10px 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: $white-color;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: 10px 10px;
     mask-repeat: no-repeat;
-		mask-position: center;
-		top: 16px;
-		right: 15px;
+    mask-position: center;
+    top: 16px;
+    right: 15px;
 
-		@media (min-width: $tablet-width) {
-			width: 10px;
-			height: 10px;
-			top: 22px;
-			right: 21px;
-		}
-	}
+    @media (min-width: $tablet-width) {
+      width: 10px;
+      height: 10px;
+      top: 22px;
+      right: 21px;
+    }
+  }
 
-	&:hover {
-		color: $white-color;
-		background-color: $blue-color;
+  &:hover {
+    color: $white-color;
+    background-color: $blue-color;
 
-		&::after {
-			background-color: $white-color;
-		}
+    &::after {
+      background-color: $white-color;
+    }
 
-		&::before {
+    &::before {
       background-color: $blue-color;
-			transform: rotate(45deg);
-		}
-	}
+      transform: rotate(45deg);
+    }
+  }
 
-	&:focus,
-		&:focus-visible {
-			&::before {
-				transform: rotate(45deg);
-			}
-		}
+  &:focus,
+  &:focus-visible {
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
 
-		&:active {
-			color: rgba(255, 255, 255, 0.7);
-			background-color: $blue-color;
-	
-			&::after {
-				background-color: $white-color;
-			}
-	
-			&::before {
-				background-color: rgba(49, 109, 194, 0.7);
-				transform: rotate(45deg);
-			}
-		}
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $blue-color;
 
-		&:disabled {
-			color: $disabled-color;
-			background-color: $primary-fon;
-			border: 1px solid $disabled-color;
-	
-			&::after {
-				background-color: $disabled-color;
-			}
-	
-			&::before {
-				background-color: rgba(255, 255, 255, 0.6);
-			}
-		}
+    &::after {
+      background-color: $white-color;
+    }
+
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+      transform: rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    background-color: $primary-fon;
+    border: 1px solid $disabled-color;
+
+    &::after {
+      background-color: $disabled-color;
+    }
+
+    &::before {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }

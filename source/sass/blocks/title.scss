@@ -1,17 +1,17 @@
 .title {
-	@include font($primary-font, 20px, 20px, $primary-color);
+  @include font($primary-font, 20px, 20px, $primary-color);
 
-	font-weight: 400;
+  font-weight: 400;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 34px, 50px, $primary-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 34px, 50px, $primary-color);
 
-		font-weight: 400;
-	}
+    font-weight: 400;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 50px, 50px, $primary-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 50px, 50px, $primary-color);
 
-		font-weight: 400;
-	}
+    font-weight: 400;
+  }
 }

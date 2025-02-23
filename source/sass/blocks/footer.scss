@@ -1,261 +1,261 @@
 .footer {
-	width: 320px;
-	padding: 40px 15px;
-	background-color: #f0efe9;
-	margin: 0 auto;
+  width: 320px;
+  padding: 40px 15px;
+  background-color: #f0efe9;
+  margin: 0 auto;
 
-	@media (min-width: $tablet-width) {
-		width: 768px;
-		padding: 40px 15px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 40px 15px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1440px;
-		padding:60px 100px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 60px 100px;
+  }
 }
 
 .footer__container-wrapper {
-	margin: 0 auto;
+  margin: 0 auto;
 
-	@media (min-width: $tablet-width) {
-		width: 678px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr auto 1fr;
-		grid-template-areas: "logo logo" "text social" "text2 social";
-	}
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "logo logo" "text social" "text2 social";
+  }
 
-	@media (min-width: $desktop-width) {
-		display: grid;
-		width: 1240px;
-		grid-template-columns: 707px 533px;
-		grid-template-rows: 1fr auto;
-		grid-template-areas: "logo social" "text text2";
-	}
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1240px;
+    grid-template-columns: 707px 533px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "logo social" "text text2";
+  }
 }
 
 .footer__logotype-wrapper {
-	width: 52px;
-	height: 52px;
-	margin: 0 auto;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
 
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
-	}
+  }
 }
 
 .footer__list-wrapper {
-	width: 290px;
-	margin: 0 auto;
-	padding: 20px 0 16px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	row-gap: 20px;
+  width: 290px;
+  margin: 0 auto;
+  padding: 20px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 20px;
 
-	@media (min-width: $tablet-width) {
-		flex-direction: row;
-		column-gap: 15px;
-		width: 528px;
-		padding: 16px 0;
-		justify-content: flex-end;
-		margin-left: -2px;
-	}
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 15px;
+    width: 528px;
+    padding: 16px 0;
+    justify-content: flex-end;
+    margin-left: -2px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 603px;
-		justify-content: space-between;
-		margin-left: -1px;
-		padding: 17px 0 16px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 603px;
+    justify-content: space-between;
+    margin-left: -1px;
+    padding: 17px 0 16px;
+  }
 }
 
 .footer__list {
-	@include font($primary-font, 14px, 20px, $primary-color);
+  @include font($primary-font, 14px, 20px, $primary-color);
 
-	font-weight: 400;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;	
-	display: flex;
-	flex-wrap: wrap;
-	column-gap: 30px;
-	justify-content: center;
+  font-weight: 400;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: center;
 
-	@media (min-width: $tablet-width) {
-		column-gap: 15px;
-	}
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+  }
 
-	@media (min-width: $desktop-width) {
-		column-gap: 30px;
-	}
+  @media (min-width: $desktop-width) {
+    column-gap: 30px;
+  }
 }
 
 .footer__link {
-	@include font($primary-font, 14px, 20px, $primary-color);
+  @include font($primary-font, 14px, 20px, $primary-color);
 
-	font-weight: 400;
-	text-decoration: none;
-	cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 16px, 20px, $primary-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 16px, 20px, $primary-color);
 
-	  font-weight: 400;
-	}
+    font-weight: 400;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 16px, 17px, $primary-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 16px, 17px, $primary-color);
 
-	  font-weight: 400;
-	}
+    font-weight: 400;
+  }
 
-	&:hover {
-		color: $blue-color;
-	}
+  &:hover {
+    color: $blue-color;
+  }
 
-	&:focus {
-		color: rgba(49, 109, 194, 0.7);
-	}
+  &:focus {
+    color: rgba(49, 109, 194, 0.7);
+  }
 
-	&:focus-visible {
-		color: rgba(49, 109, 194, 0.7);
-	}
+  &:focus-visible {
+    color: rgba(49, 109, 194, 0.7);
+  }
 
-	&:active {
-		color: $active-color-button;
-	}
+  &:active {
+    color: $active-color-button;
+  }
 }
 
 .footer__link-text {
-	@include font($primary-font, 12px, 14px, $primary-color);
+  @include font($primary-font, 12px, 14px, $primary-color);
 
-	font-weight: 400;
-	text-decoration: none;
-	border-bottom: 1px solid $primary-color;
-	
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 12px, 12px, $primary-color);
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid $primary-color;
 
-	  font-weight: 400;
-		margin-bottom: -4px;
-	}
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 12px, 12px, $primary-color);
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 14px, 18px, $primary-color);
+    font-weight: 400;
+    margin-bottom: -4px;
+  }
 
-	  font-weight: 400;
-	}
-	
-	&:hover {
-		color: $blue-color;
-		border-bottom: 1px solid $blue-color;
-	}
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 14px, 18px, $primary-color);
 
-	&:focus {
-		color: rgba(49, 109, 194, 0.7);
-		border-bottom: 1px solid rgba(49, 109, 194, 0.7);
-	}
+    font-weight: 400;
+  }
 
-	&:focus-visible {
-		color: rgba(49, 109, 194, 0.7);
-		border-bottom: 1px solid rgba(49, 109, 194, 0.7);
-	}
+  &:hover {
+    color: $blue-color;
+    border-bottom: 1px solid $blue-color;
+  }
 
-	&:active {
-		color: $active-color-button;
-		border-bottom: 1px solid $active-color-button;
-	}
+  &:focus {
+    color: rgba(49, 109, 194, 0.7);
+    border-bottom: 1px solid rgba(49, 109, 194, 0.7);
+  }
+
+  &:focus-visible {
+    color: rgba(49, 109, 194, 0.7);
+    border-bottom: 1px solid rgba(49, 109, 194, 0.7);
+  }
+
+  &:active {
+    color: $active-color-button;
+    border-bottom: 1px solid $active-color-button;
+  }
 }
 
 .footer__text {
-	text-align: center;
-	width: 290px;
-	margin-bottom: 12px;
+  text-align: center;
+  width: 290px;
+  margin-bottom: 12px;
 
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
-		grid-area: text;
-		margin-top: 18px;
-		margin-bottom: 11px;
-	}
+    grid-area: text;
+    margin-top: 18px;
+    margin-bottom: 11px;
+  }
 
-	@media (min-width: $desktop-width) {
-		display: block;
+  @media (min-width: $desktop-width) {
+    display: block;
     grid-area: text2;
-		margin-top: 23px;
-		margin-left: 321px;
-	}
+    margin-top: 23px;
+    margin-left: 321px;
+  }
 }
 
 .footer__stagirovka {
-	@include font($primary-font, 12px, 14px, $primary-color);
+  @include font($primary-font, 12px, 14px, $primary-color);
 
-	font-weight: 400;
-	opacity: 0.6;
-	width: 290px;
-	text-align: center;
-	margin-bottom: 14px;
+  font-weight: 400;
+  opacity: 0.6;
+  width: 290px;
+  text-align: center;
+  margin-bottom: 14px;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 12px, 12px, $primary-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 12px, 12px, $primary-color);
 
-	  font-weight: 400;
-		margin-bottom: 10px;
+    font-weight: 400;
+    margin-bottom: 10px;
     text-align: left;
-		grid-area: text2;
-	}
+    grid-area: text2;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 14px, 18px, $primary-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 14px, 18px, $primary-color);
 
-	  font-weight: 400;
+    font-weight: 400;
     grid-area: text;
-		opacity: 1;
-		margin-top: 26px;
-	}
+    opacity: 1;
+    margin-top: 26px;
+  }
 }
 
 .footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-		flex-wrap: wrap;
-		width: 678px;
+    flex-wrap: wrap;
+    width: 678px;
     flex-direction: row;
-		margin: 0 auto;
-		grid-area: logo;
-		column-gap: 98px;
-	}
-
-	@media (min-width: $desktop-width) {
+    margin: 0 auto;
     grid-area: logo;
-		column-gap: 52px;
-		margin-left: 0px;
-		width: 707px;
-	}
+    column-gap: 98px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: logo;
+    column-gap: 52px;
+    margin-left: 0;
+    width: 707px;
+  }
 }
 
 .footer__container {
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin-top: 15px;
-	}
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
 
-	@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
-	}
+  }
 }
 
 .footer__social {
-	@media (min-width: $tablet-width) {
-		grid-area: social;
-	}
+  @media (min-width: $tablet-width) {
+    grid-area: social;
+  }
 
-	@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 148px;
-		grid-area: social;
-	}
+    grid-area: social;
+  }
 }

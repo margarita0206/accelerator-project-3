@@ -36,7 +36,7 @@
   &::before {
     content: "";
     display: block;
-		position: absolute;
+    position: absolute;
     width: 26px;
     height: 26px;
     mask-position: center;
@@ -51,13 +51,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    width:36px;
+    width: 36px;
     height: 36px;
   }
 
   &--vk::before {
     mask-image: url("/__spritemap#sprite-vk-view");
-		mask-size: 14px 10px;
+    mask-size: 14px 10px;
   }
 
   &--odnoklassniki::before {

@@ -1,421 +1,421 @@
 .about {
-	min-width: 320px;
-	padding: 51px 15px 40px;
+  min-width: 320px;
+  padding: 51px 15px 40px;
 
-	@media (min-width: $tablet-width) {
-		min-width: 768px;
-		padding: 50px 85px 60px 45px;
-	}
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 50px 85px 60px 45px;
+  }
 
-	@media (min-width: $desktop-width) {
-		min-width: 1440px;
-		padding: 70px 100px;
-	}
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding: 70px 100px;
+  }
 }
 
 .about__container {
-	width: 290px;
-	margin: 0 auto;
+  width: 290px;
+  margin: 0 auto;
 
-	@media (min-width: $tablet-width) {
-		width: 638px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 638px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1240px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+  }
 }
 
 .about__title {
-	@include font($primary-font, 20px, 20px, $blue-color);
+  @include font($primary-font, 20px, 20px, $blue-color);
 
-	font-weight: 400;
-	margin: 0;
-	width: 290px;
+  font-weight: 400;
+  margin: 0;
+  width: 290px;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 34px, 50px, $blue-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 34px, 50px, $blue-color);
 
-	  font-weight: 400;
-		margin-bottom: 31px;
-		width: 638px;
-	}
+    font-weight: 400;
+    margin-bottom: 31px;
+    width: 638px;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 50px, 50px, $blue-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 50px, 50px, $blue-color);
 
-	  font-weight: 400;
-		margin-bottom: 30px;
-		width: 702px;
-	}
+    font-weight: 400;
+    margin-bottom: 30px;
+    width: 702px;
+  }
 }
 
 .about__wrapper-text {
-	p {
-		@include font($primary-font, 16px, 22px, $primary-color);
+  p {
+    @include font($primary-font, 16px, 22px, $primary-color);
 
-	  font-weight: 400;
-		margin: 14px 0 40px;
-		width: 290px;
+    font-weight: 400;
+    margin: 14px 0 40px;
+    width: 290px;
 
-		@media (min-width: $tablet-width) {
-			@include font($primary-font, 20px, 26px, $primary-color);
-	
-			font-weight: 400;
-			margin-bottom: 39px;
-			width: 638px;
-		}
-	
-		@media (min-width: $desktop-width) {
-			@include font($primary-font, 22px, 32px, $primary-color);
-	
-			font-weight: 400;
-			margin: 0;
-			width: 702px;
-		}
-	}
+    @media (min-width: $tablet-width) {
+      @include font($primary-font, 20px, 26px, $primary-color);
+
+      font-weight: 400;
+      margin-bottom: 39px;
+      width: 638px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font($primary-font, 22px, 32px, $primary-color);
+
+      font-weight: 400;
+      margin: 0;
+      width: 702px;
+    }
+  }
 }
 
-.abour__wrapper-info {
-	@media (min-width: $desktop-width) {
-		display: flex;
-		column-gap: 40px;
-		margin-bottom: 60px;
-	}
+.about__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 60px;
+  }
 }
 
 .about__wrapper-goal {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 
-	@media (min-width: $tablet-width) {
-		margin-bottom: 60px;
-	}
-
-	@media (min-width: $desktop-width) {
-		margin-bottom: 0;
-	}
-
-	h4 {
-		@include font($primary-font, 18px, 22px, $blue-color);
-    
-	  font-weight: 400;
-	  margin: 0;
-	  margin-bottom: 20px;
-	  width: 100px;
-
-	  @media (min-width: $tablet-width) {
-		  @include font($primary-font, 28px, 28px, $blue-color);
-
-	    font-weight: 400;
-		  margin-bottom: 30px;
-		  width: 150px;
-	  }
-
-	  @media (min-width: $desktop-width) {
-		  @include font($primary-font, 32px, 36px, $blue-color);
-
-	    font-weight: 400;
-		  margin-bottom: 40px;
-		  width: 170px;
-	  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
   }
 
-	p {
-		@include font($primary-font, 14px, 20px, $primary-color);
-    
-	  font-weight: 400;
-	  margin: 0;
-	  width: 290px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 
-	  @media (min-width: $tablet-width) {
-		  @include font($primary-font, 16px, 20px, $primary-color);
+  h4 {
+    @include font($primary-font, 18px, 22px, $blue-color);
 
-	    font-weight: 400;
-		  margin-bottom: 40px;
-		  width: 498px;
-	  }
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100px;
 
-	  @media (min-width: $desktop-width) {
-		  @include font($primary-font, 16px, 26px, $primary-color);
+    @media (min-width: $tablet-width) {
+      @include font($primary-font, 28px, 28px, $blue-color);
 
-	    font-weight: 400;
-		  margin-bottom: 50px;
-	  }
-	}
+      font-weight: 400;
+      margin-bottom: 30px;
+      width: 150px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font($primary-font, 32px, 36px, $blue-color);
+
+      font-weight: 400;
+      margin-bottom: 40px;
+      width: 170px;
+    }
+  }
+
+  p {
+    @include font($primary-font, 14px, 20px, $primary-color);
+
+    font-weight: 400;
+    margin: 0;
+    width: 290px;
+
+    @media (min-width: $tablet-width) {
+      @include font($primary-font, 16px, 20px, $primary-color);
+
+      font-weight: 400;
+      margin-bottom: 40px;
+      width: 498px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font($primary-font, 16px, 26px, $primary-color);
+
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .about__wrapper-list {
-	width: 290px;
-	margin: 0 auto;
-	padding: 42px 20px 40px;
-	background-color: $blue-color;
-	border-radius: 20px;
+  width: 290px;
+  margin: 0 auto;
+  padding: 42px 20px 40px;
+  background-color: $blue-color;
+  border-radius: 20px;
 
-	@media (min-width: $tablet-width) {
-		width: 678px;
-		padding: 72px 50px 50px 70px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    padding: 72px 50px 50px 70px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1240px;
-		padding: 72px 100px 50px 120px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+    padding: 72px 100px 50px 120px;
+  }
 }
 
 .about__list {
   margin: 0;
-	padding: 0;
-	list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 
-	@media (min-width: $tablet-width) {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 54px 52px;
-	}
-
-	@media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
-	}
+    flex-wrap: wrap;
+    gap: 54px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .about__item {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin-bottom: 22px;
-	border: 1px solid $primary-fon;
-	border-radius: 15px;
-	padding: 8px 20px 15px;
-	width: 250px;
-	background-color: $blue-color;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 22px;
+  border: 1px solid $primary-fon;
+  border-radius: 15px;
+  padding: 8px 20px 15px;
+  width: 250px;
+  background-color: $blue-color;
 
-	&:last-of-type {
-		margin-bottom: 0;
-	}
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 253px;
-		margin: 0;
-		padding: 9px 20px 14px;
-	}
+    margin: 0;
+    padding: 9px 20px 14px;
+  }
 
-	@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 484px;
-		padding: 30px 39px 30px 40px;
-		display: flex;
-	}
+    padding: 30px 39px 30px 40px;
+    display: flex;
+  }
 
-	span {
-		display: block;
-		@include font($primary-font, 16px, 20px, $white-color);
-    
-	  font-weight: 400;
-		letter-spacing: 0.16px;
-	  margin: -4px 0 15px;
-	  width: 210px;
-		text-transform: uppercase;
+  span {
+    display: block;
 
-	  @media (min-width: $tablet-width) {
-		  @include font($primary-font, 20px, 22px, $white-color);
+    @include font($primary-font, 16px, 20px, $white-color);
 
-	    font-weight: 400;
-		  width: 211px;
-	  }
+    font-weight: 400;
+    letter-spacing: 0.16px;
+    margin: -4px 0 15px;
+    width: 210px;
+    text-transform: uppercase;
 
-	  @media (min-width: $desktop-width) {
-		  @include font($primary-font, 26px, 30px, $white-color);
+    @media (min-width: $tablet-width) {
+      @include font($primary-font, 20px, 22px, $white-color);
 
-	    font-weight: 400;
-			width: 201px;
-			min-height: 60px;
-		  margin: 0;
-	  }
-	}
+      font-weight: 400;
+      width: 211px;
+    }
 
-	p {
-		@include font($primary-font, 14px, 20px, $primary-fon);
-    
-	  font-weight: 300;
+    @media (min-width: $desktop-width) {
+      @include font($primary-font, 26px, 30px, $white-color);
 
-	  margin: 0;
-	  width: 208px;
+      font-weight: 400;
+      width: 201px;
+      min-height: 60px;
+      margin: 0;
+    }
+  }
 
-	  @media (min-width: $tablet-width) {
-		  @include font($primary-font, 16px, 20px, $primary-fon);
+  p {
+    @include font($primary-font, 14px, 20px, $primary-fon);
 
-	    font-weight: 300;
-		  width: 211px;
-	  }
+    font-weight: 300;
 
-	  @media (min-width: $desktop-width) {
-		  @include font($primary-font, 16px, 20px, $primary-fon);
+    margin: 0;
+    width: 208px;
 
-	    font-weight: 300;
-			width: 201px;
-	  }
-	}
+    @media (min-width: $tablet-width) {
+      @include font($primary-font, 16px, 20px, $primary-fon);
+
+      font-weight: 300;
+      width: 211px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font($primary-font, 16px, 20px, $primary-fon);
+
+      font-weight: 300;
+      width: 201px;
+    }
+  }
 }
 
 .about__star {
-	display: block;
+  display: block;
   width: 42px;
   height: 42px;
   border-radius: 30px;
   background-color: $blue-color;
-	margin-top: -31px;
-	margin-left: -41px;
+  margin-top: -31px;
+  margin-left: -41px;
 
-	&::before {
-		content: "";
-		position: absolute;
-		display: block;
-		width: 42px;
-		height: 42px;
-		background-color: $white-color;
-		mask-image: url("/__spritemap#sprite-star-view");
-		mask-size: 19px 22px;
-		mask-repeat: no-repeat;
-		mask-position: center;
-		
-	}
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-color: $white-color;
+    mask-image: url("/__spritemap#sprite-star-view");
+    mask-size: 19px 22px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
 
-	@media (min-width: $desktop-width) {
-		margin-top: -50px;
-		margin-left: -60px;
-	}
+  @media (min-width: $desktop-width) {
+    margin-top: -50px;
+    margin-left: -60px;
+  }
 }
 
 .about__wrapper-desktop {
-	@media (min-width: $desktop-width) {
-		flex-direction: row;
-		display: flex;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    display: flex;
     justify-content: space-between;
-		flex-wrap: wrap;
-		width: 402px;
-		align-items: center;
-	}
+    flex-wrap: wrap;
+    width: 402px;
+    align-items: center;
+  }
 }
 
 .about__button-wrapper {
-	width: 223px;
-	min-height: 44px;
-	margin-top: 30px;
+  width: 223px;
+  min-height: 44px;
+  margin-top: 30px;
 
-	@media (min-width: $tablet-width) {
-		margin-top: 40px;
-	}
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
 }
 
 .about__link-button {
-	@include font($primary-font, 12px, 12px, $blue-color);
+  @include font($primary-font, 12px, 12px, $blue-color);
 
-	font-weight: 500;	
-	border: 1px solid $blue-color;
-	letter-spacing: 0.24px;
-	border-radius: 30px;
-	width: 223px;
-	min-height: 44px;
-	padding: 13px 57px 12px 21px;
-	text-decoration: none;
-	text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid $blue-color;
+  letter-spacing: 0.24px;
+  border-radius: 30px;
+  width: 223px;
+  min-height: 44px;
+  padding: 13px 57px 12px 21px;
+  text-decoration: none;
+  text-transform: uppercase;
   position: relative;
+  cursor: pointer;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 14px, 14px, $blue-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 14px, 14px, $blue-color);
 
-		font-weight: 500;
-		letter-spacing: 0.28px;
-		padding: 13px 80px 13px 30px;
-		width: 279px;
-		min-height: 56px;
-	}
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    padding: 13px 80px 13px 30px;
+    width: 279px;
+    min-height: 56px;
+  }
 
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
     width: 34px;
-		height: 34px;
-		background-color: $blue-color;
-		border-radius: 50%;
-		right: 4px;
-		top: 4px;
+    height: 34px;
+    background-color: $blue-color;
+    border-radius: 50%;
+    right: 4px;
+    top: 4px;
 
-		@media (min-width: $tablet-width) {
-			width: 46px;
-			height: 46px;
-		}
-	}
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
+  }
 
-	&::before {
-		content: "";
-		position: absolute;
-		display: block;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
     width: 10px;
-		height: 10px;
-		z-index: 1;
-		background-color: $white-color;
-		mask-image: url("/__spritemap#sprite-arrow-view");
-		mask-size: 10px 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: $white-color;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: 10px 10px;
     mask-repeat: no-repeat;
-		mask-position: center;
-		top: 16px;
-		right: 15px;
+    mask-position: center;
+    top: 16px;
+    right: 15px;
 
-		@media (min-width: $tablet-width) {
-			width: 10px;
-			height: 10px;
-			top: 22px;
-			right: 21px;
-		}
-	}
+    @media (min-width: $tablet-width) {
+      width: 10px;
+      height: 10px;
+      top: 22px;
+      right: 21px;
+    }
+  }
 
-	&:hover {
-		color: $white-color;
-		background-color: $blue-color;
+  &:hover {
+    color: $white-color;
+    background-color: $blue-color;
 
-		&::after {
-			background-color: $white-color;
-		}
+    &::after {
+      background-color: $white-color;
+    }
 
-		&::before {
+    &::before {
       background-color: $blue-color;
-			transform: rotate(45deg);
-		}
-	}
+      transform: rotate(45deg);
+    }
+  }
 
-	&:focus,
-		&:focus-visible {
-			&::before {
-				transform: rotate(45deg);
-			}
-		}
+  &:focus,
+  &:focus-visible {
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
 
-		&:active {
-			color: rgba(255, 255, 255, 0.7);
-			background-color: $blue-color;
-	
-			&::after {
-				background-color: $white-color;
-			}
-	
-			&::before {
-				background-color: rgba(49, 109, 194, 0.7);
-				transform: rotate(45deg);
-			}
-		}
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $blue-color;
 
-		&:disabled {
-			color: $disabled-color;
-			background-color: $primary-fon;
-			border: 1px solid $disabled-color;
-	
-			&::after {
-				background-color: $disabled-color;
-			}
-	
-			&::before {
-				background-color: rgba(255, 255, 255, 0.6);
-			}
-		}
+    &::after {
+      background-color: $white-color;
+    }
+
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+      transform: rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    background-color: $primary-fon;
+    border: 1px solid $disabled-color;
+
+    &::after {
+      background-color: $disabled-color;
+    }
+
+    &::before {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }

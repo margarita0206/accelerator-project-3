@@ -1,20 +1,20 @@
 .form {
   padding: 40px 0;
 
-	@media (min-width: $tablet-width) {
-		padding: 50px 0;
-	}
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+  }
 
-	@media (min-width: $desktop-width) {
-		padding: 60px 0;
-	}
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
 }
 
 .form__container-wrapper {
-	min-width: 320px;
+  min-width: 320px;
   width: 100%;
   min-height: 753px;
-	padding: 43px 10px 40px 10px;
+  padding: 43px 10px 40px;
   background-image:
     image-set(
       url("../../img/form-background-mobile@1x.jpg") 1x,
@@ -25,479 +25,444 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-	@media (min-width: $tablet-width) {
-		margin: 0 auto;
-	  width: 652px;
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 652px;
     min-height: 780px;
-		padding: 0;
+    padding: 0;
     background-image:
-    image-set(
-      url("../../img/form-background-tablet@1x.jpg") 1x,
-      url("../../img/form-background-tablet@1x.jpg") 2x,
-      url("../../img/form-background-tablet@1x.jpg") 1x,
-      url("../../img/form-background-tablet@1x.jpg") 2x
-    );
+      image-set(
+        url("../../img/form-background-tablet@1x.jpg") 1x,
+        url("../../img/form-background-tablet@1x.jpg") 2x,
+        url("../../img/form-background-tablet@1x.jpg") 1x,
+        url("../../img/form-background-tablet@1x.jpg") 2x
+      );
     background-size: 100% auto;
-	  border-radius: 3%;
+    border-radius: 3%;
     background-repeat: no-repeat;
-	}
-	
-	@media (min-width: $desktop-width) {
-		width: 1240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
     min-height: 780px;
-		padding: 0;
+    padding: 0;
     background-image:
-    image-set(
-      url("../../img/form-background-desktop@1x.jpg") 1x,
-      url("../../img/form-background-desktop@1x.jpg") 2x,
-      url("../../img/form-background-desktop@1x.jpg") 1x,
-      url("../../img/form-background-desktop@1x.jpg") 2x
-    );
+      image-set(
+        url("../../img/form-background-desktop@1x.jpg") 1x,
+        url("../../img/form-background-desktop@1x.jpg") 2x,
+        url("../../img/form-background-desktop@1x.jpg") 1x,
+        url("../../img/form-background-desktop@1x.jpg") 2x
+      );
     background-size: 100% auto;
-	  border-radius: 1%;
+    border-radius: 1%;
     background-repeat: no-repeat;
-	}
+  }
 }
 
 .form__container {
   width: 300px;
-	padding: 15px 15px;
-	background-color: $blue-color;
-	border-radius: 16px;
-	min-height: 670px;
+  padding: 15px 15px 5px;
+  background-color: $blue-color;
+  border-radius: 16px;
+  min-height: 670px;
 
-	@media (min-width: $tablet-width) {
-		top: 50px;
-		min-height: 780px;
-		padding: 41px 40px 36px;
-		width: 442px;
-	}
+  @media (min-width: $tablet-width) {
+    top: 50px;
+    min-height: 780px;
+    padding: 41px 40px 11px;
+    width: 442px;
+  }
 
-	@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 490px;
-		min-height: 800px;
-		left: 100px;
-		padding: 49px 70px 40px 70px;
-	}
+    min-height: 800px;
+    left: 100px;
+    padding: 49px 70px 15px;
+  }
 }
 
 .form__title {
-	@include font($primary-font, 18px, 22px, $white-color);
+  @include font($primary-font, 18px, 22px, $white-color);
 
-	font-weight: 400;
-	width: 270px;
-	margin: 0;
-	margin-bottom: 10px;
+  font-weight: 400;
+  width: 270px;
+  margin: 0;
+  margin-bottom: 10px;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 28px, 28px, $white-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 28px, 28px, $white-color);
 
-	  font-weight: 400;
-		width: 350px;
-		margin-bottom: 31px;
-	}
+    font-weight: 400;
+    width: 350px;
+    margin-bottom: 31px;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 32px, 26px, $white-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 32px, 26px, $white-color);
 
-	  font-weight: 400;
-		width: 219px;
-		margin-bottom: 39px;
-	}
+    font-weight: 400;
+    width: 219px;
+    margin-bottom: 39px;
+  }
 }
 
 .form__paragraph {
-	@include font($primary-font, 14px, 20px, $white-color);
+  @include font($primary-font, 14px, 20px, $white-color);
 
-	font-weight: 400;
-	width: 270px;
-	margin: 0;
-	margin-bottom: 21px;
+  font-weight: 400;
+  width: 270px;
+  margin: 0;
+  margin-bottom: 21px;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 16px, 20px, $white-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 16px, 20px, $white-color);
 
-	  font-weight: 400;
-		width: 346px;
-		margin-bottom: 40px;
-	}
+    font-weight: 400;
+    width: 346px;
+    margin-bottom: 40px;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 16px, 26px, $white-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 16px, 26px, $white-color);
 
-	  font-weight: 400;
-		width: 346px;
-		margin-bottom: 42px;
-	}
+    font-weight: 400;
+    width: 346px;
+    margin-bottom: 42px;
+  }
 }
 
 .form__input-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	margin-bottom: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 21px;
 
-	@media (min-width: $tablet-width) {
-		margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
 
-		&:last-of-type {
-			margin-bottom: 25px;
-		}
-	}
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
+  }
 
-	@media (min-width: $desktop-width) {
-		margin-bottom: 22px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
 
-		&--text {
-			margin-bottom: 20px;
-		}
+    &--text {
+      margin-bottom: 20px;
+    }
 
-		&:last-of-type {
-			margin-bottom: 25px;
-		}
-	}
-}
-
-.form__label {
-	@include font($primary-font, 12px, 14px, $primary-fon);
-
-	font-weight: 400;
-	margin-bottom: 11px;
-	opacity: 0.8;
-
-	&:disabled {
-		color: rgba(240, 239, 233, 0.6);
-	}
-
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 14px, 20px, $primary-fon);
-
-		font-weight: 400;
-		margin-bottom: 12px;
-	}
-
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 14px, 14px, $primary-fon);
-
-		font-weight: 400;
-		width: 346px;
-		margin-bottom: 14px;
-
-		&--select {
-			margin-bottom: 12px;
-		}
-	}
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .form__input {
-	width: 270px;
-	min-height: 50px;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	border-radius: 8px;
-	background-color: $blue-color;
+  width: 270px;
+  min-height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: $blue-color;
 
-	@media (min-width: $tablet-width) {
-		width: 362px; 
-	}
+  @media (min-width: $tablet-width) {
+    width: 362px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 350px; 
-	}
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
 
-	&:hover {
-		border-color: $white-color;
-	}
+  &:hover {
+    border-color: $white-color;
+  }
 
-	&:focus {
-		border-color: $white-color;
-		color: $white-color;
-	}
+  &:focus {
+    border-color: $white-color;
+    color: $white-color;
+  }
 
-	&:focus-visible {
-		border-color: $white-color;
-	}
+  &:focus-visible {
+    border-color: $white-color;
+  }
 
-	&:active {
-		border-color: $white-color;
-	}
+  &:active {
+    border-color: $white-color;
+  }
 
-	&:disabled {
-		outline: rgba(255, 255, 255, 0.2);
-		border-color: rgba(255, 255, 255, 0.4);
-	}
+  &:disabled {
+    outline: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
 
-	&--error {
-		outline: rgba(255, 94, 102, 0.2);
-		border-color: $error-color;
-	}
+  &--error {
+    outline: rgba(255, 94, 102, 0.2);
+    border-color: $error-color;
+  }
 }
 
-.form__text {
-	width: 270px;
-	min-height: 94px;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	border-radius: 8px;
-	background-color: $blue-color;
-	resize: none;
+.form__input-text {
+  width: 270px;
+  min-height: 94px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: $blue-color;
+  resize: none;
 
-	@media (min-width: $tablet-width) {
-		width: 362px; 
-		min-height: 88px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 362px;
+    min-height: 88px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 350px; 
-		min-height: 90px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    min-height: 90px;
+  }
 
-	&:hover {
-		border-color: $white-color;
-	}
+  &:hover {
+    border-color: $white-color;
+  }
 
-	&:focus {
-		border-color: $white-color;
-		color: $white-color;
-	}
+  &:focus {
+    border-color: $white-color;
+    color: $white-color;
+  }
 
-	&:focus-visible {
-		border-color: $white-color;
-	}
+  &:focus-visible {
+    border-color: $white-color;
+  }
 
-	&:active {
-		border-color: $white-color;
-	}
+  &:active {
+    border-color: $white-color;
+  }
 
-	&:disabled {
-		cursor: not-allowed;
-		outline: rgba(255, 255, 255, 0.2);
-		border-color: rgba(255, 255, 255, 0.4);
-	}
+  &:disabled {
+    cursor: not-allowed;
+    outline: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
 
-	&--error {
-		outline: rgba(255, 94, 102, 0.2);
-		border-color: $error-color;
-	}
+  &--error {
+    outline: rgba(255, 94, 102, 0.2);
+    border-color: $error-color;
+  }
 }
 
 .form__select-wrapper {
-	width: 260px;
-	min-height: 52px;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	border-radius: 8px;
-	background-color: $blue-color;
+  width: 260px;
+  min-height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: $blue-color;
 
-	@media (min-width: $tablet-width) {
-		width: 362px; 
-	}
+  @media (min-width: $tablet-width) {
+    width: 362px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 350px; 
-	}
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
 
-	&:hover {
-		border-color: $white-color;
-	}
+  &:hover {
+    border-color: $white-color;
+  }
 
-	&:focus {
-		border-color: $white-color;
-		color: $white-color;
-	}
+  &:focus {
+    border-color: $white-color;
+    color: $white-color;
+  }
 
-	&:focus-visible {
-		border-color: $white-color;
-	}
+  &:focus-visible {
+    border-color: $white-color;
+  }
 
-	&:active {
-		border-color: $white-color;
-	}
+  &:active {
+    border-color: $white-color;
+  }
 
-	&:disabled {
-		outline: rgba(255, 255, 255, 0.2);
-		border-color: rgba(255, 255, 255, 0.4);
-	}
+  &:disabled {
+    outline: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
 
-	&--error {
-		outline: rgba(255, 94, 102, 0.2);
-		border-color: $error-color;
-	}
+  &--error {
+    outline: rgba(255, 94, 102, 0.2);
+    border-color: $error-color;
+  }
 }
 
 .form__select {
-	appearance: none;
-	display: block;
-	width: 30px;
-	height: 30px;
-	mask-image: url("/__spritemap#sprite-arrow-down-view");
-	mask-repeat: no-repeat;
-	background-color: $white-color;
-	mask-size: 16px 9px;
-	mask-position: center;
-	margin-top: 11px;
-	margin-left: 215px;
+  appearance: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  mask-image: url("/__spritemap#sprite-arrow-down-view");
+  mask-repeat: no-repeat;
+  background-color: $white-color;
+  mask-size: 16px 9px;
+  mask-position: center;
+  margin-top: 11px;
+  margin-left: 215px;
+  z-index: 0;
 
-	&:active,
-	&:focus {
-		transform: rotate(180deg);
-	}
+  &:active,
+  &:focus {
+    transform: rotate(180deg);
+  }
 
-	&:default {
-		mask-image: url("/__spritemap#sprite-arrow-down-view");
-		transform: rotate(180deg);
-	}
+  &:default {
+    mask-image: url("/__spritemap#sprite-arrow-down-view");
+    transform: rotate(180deg);
+  }
 
-	@media (min-width: $tablet-width) {
-		margin-left: 317px;
-	}
+  @media (min-width: $tablet-width) {
+    margin-left: 317px;
+  }
 
-	@media (min-width: $desktop-width) {
-		margin-left: 305px;
-	}
-}
-
-.form__label-checkbox {
-	@include font($primary-font, 12px, 14px, $white-color);
-
-	font-weight: 400;
-	display: block;
-	width: 240px;
-
-	@media (min-width: $tablet-width) {
-		width: 362px; 
-	}
-
-	@media (min-width: $desktop-width) {
-		width: 334px; 
-	}
+  @media (min-width: $desktop-width) {
+    margin-left: 305px;
+  }
 }
 
 .form__button {
-	@include font($primary-font, 12px, 12px, $white-color);
+  @include font($primary-font, 12px, 12px, $white-color);
 
-	font-weight: 400;
-	letter-spacing: 0.24px;
-	text-transform: uppercase;
-	width: 260px;
-	padding: 16px 69px 14px 31px;
-	min-height: 44px;
-	background-color: $blue-color;
-	border: 1px solid $white-color;
-	border-radius: 30px;
-	margin-top: 19px;
-	position: relative;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  width: 260px;
+  padding: 16px 69px 14px 31px;
+  min-height: 44px;
+  background-color: $blue-color;
+  border: 1px solid $white-color;
+  border-radius: 30px;
+  margin-top: 19px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
     width: 34px;
-		height: 34px;
-		background-color: $white-color;
-		border-radius: 50%;
-		right: 4px;
-		top: 4px;
+    height: 34px;
+    background-color: $white-color;
+    border-radius: 50%;
+    right: 4px;
+    top: 4px;
 
-		@media (min-width: $tablet-width) {
-			width: 46px;
-			height: 46px;
-		}
-	}
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
+  }
 
-	&::before {
-		content: "";
-		position: absolute;
-		display: block;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
     width: 10px;
-		height: 10px;
-		z-index: 1;
-		background-color: $blue-color;
-		mask-image: url("/__spritemap#sprite-arrow-view");
-		mask-size: 10px 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: $blue-color;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: 10px 10px;
     mask-repeat: no-repeat;
-		mask-position: center;
-		top: 17px;
-		right: 16px;
+    mask-position: center;
+    top: 17px;
+    right: 16px;
 
-		@media (min-width: $tablet-width) {
-			width: 10px;
-			height: 10px;
-			top: 22px;
-			right: 21px;
-		}
-	}
+    @media (min-width: $tablet-width) {
+      width: 10px;
+      height: 10px;
+      top: 22px;
+      right: 21px;
+    }
+  }
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 14px, 14px, $white-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 14px, 14px, $white-color);
 
-	  font-weight: 400;
-		letter-spacing: 0.28px;
-		width: 352px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    width: 352px;
     padding: 21px 81px 19px 31px;
-		margin-top: 43px;
-	}
+    margin-top: 43px;
+  }
 
-	@media (min-width: $desktop-width) {
-		margin-top: 43px;
-		padding: 21px 81px 19px 29px;
-		width: 350px;
-	}
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+    padding: 21px 81px 19px 29px;
+    width: 350px;
+  }
 
-	&:hover {
-		color: $blue-color;
-		background-color: $white-color;
+  &:hover {
+    color: $blue-color;
+    background-color: $white-color;
 
-		&::after {
-			background-color: $blue-color;
-		}
+    &::after {
+      background-color: $blue-color;
+    }
 
-		&::before {
+    &::before {
       background-color: $white-color;
-			transform: rotate(45deg);
-		}
-	}
+      transform: rotate(45deg);
+    }
+  }
 
-	&:focus,
-		&:focus-visible {
-			&::before {
-				transform: rotate(45deg);
-			}
-		}
+  &:focus,
+  &:focus-visible {
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
 
-		&:active {
-			color: rgba(49, 109, 194, 0.7);
-			background-color: $white-color;
-	
-			&::after {
-				background-color: $blue-color;
-			}
-	
-			&::before {
-				background-color: rgba(255, 255, 255, 0.7);
-				transform: rotate(45deg);
-			}
-		}
+  &:active {
+    color: rgba(49, 109, 194, 0.7);
+    background-color: $white-color;
 
-		&:disabled {
-			color: $disabled-color;
-			background-color: $blue-color;
-			border: 1px solid $disabled-color;
-	
-			&::after {
-				background-color: $disabled-color;
-			}
-	
-			&::before {
-				background-color: rgba(255, 255, 255, 0.6);
-			}
-		}
+    &::after {
+      background-color: $blue-color;
+    }
+
+    &::before {
+      background-color: rgba(255, 255, 255, 0.7);
+      transform: rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    background-color: $blue-color;
+    border: 1px solid $disabled-color;
+
+    &::after {
+      background-color: $disabled-color;
+    }
+
+    &::before {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }
 
 .form__control {
   position: relative;
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+  }
 }
 
 .form__control-mark {
   position: absolute;
-  top: 22%;
+  top: 49%;
   left: 0;
   transform: translateY(-50%);
   display: block;
@@ -509,19 +474,19 @@
   transition: transform 0.3s ease;
   cursor: pointer;
 
-	@media (min-width: $tablet-width) {
-		top: 5%;
-	}
+  @media (min-width: $tablet-width) {
+    top: 10px;
+  }
 
-	@media (min-width: $desktop-width) {
-		top: 6%;
-	}
+  @media (min-width: $desktop-width) {
+    top: 6px;
+  }
 }
 
 .form__control-label {
-	@include font($primary-font, 12px, 14px, $white-color);
+  @include font($primary-font, 12px, 14px, $white-color);
 
-	font-weight: 400;
+  font-weight: 400;
   display: block;
   text-align: left;
   text-underline-position: from-font;
@@ -539,13 +504,27 @@
   }
 }
 
+.form__control-mark--error {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid $error-color;
+    background: rgba(255, 94, 102, 0.2);
+  }
+}
+
 .form__control-label br {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.form__control-input[type="checkbox"]:checked+.form__control-mark::before {
+.form__control-input[type="checkbox"]:checked + .form__control-mark::before {
   content: "";
   display: block;
   position: absolute;
@@ -560,8 +539,8 @@
   background-color: $blue-color;
 }
 
-.form__control-input[type="checkbox"]:hover+.form__control-mark,
-.form__control-input[type="checkbox"]:focus+.form__control-mark {
+.form__control-input[type="checkbox"]:hover + .form__control-mark,
+.form__control-input[type="checkbox"]:focus + .form__control-mark {
   background-color: $blue-color;
 
   &::after {
@@ -580,7 +559,7 @@
   }
 }
 
-.form__control-input[type="checkbox"]:disabled+.form__control-mark {
+.form__control-input[type="checkbox"]:disabled + .form__control-mark {
   background-color: $disabled-color;
   opacity: 0.5;
   cursor: not-allowed;

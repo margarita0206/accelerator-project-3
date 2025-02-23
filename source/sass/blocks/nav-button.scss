@@ -22,7 +22,7 @@
   &--opened {
     flex-grow: 2;
     color: $white-color;
-    background-color:$blue-color ;
+    background-color: $blue-color;
   }
 
   &--opened .nav-button__lines {
@@ -36,7 +36,7 @@
     top: 0;
     background-color: $blue-color;
   }
-  
+
   &--opened .nav-button__lines::after {
     transform: rotate(90deg);
     opacity: 0;
@@ -52,7 +52,7 @@
     transform: rotate(225deg);
   }
 
-  &:hover {
+  &:not(:focus-visible):hover {
     background-color: $blue-color;
     color: $white-color;
   }
@@ -61,18 +61,10 @@
     color: rgba(255, 255, 255, 0.7);
   }
 
-  &:focus-visible {
-    background-color: $white-color;
-    color: $blue-color;
-    outline: none;
-  }
-
-  &:active .nav-button__lines {
-    background-color: rgba(49, 109, 194, 0.7);
-  }
   &:active .nav-button__lines::before {
     background-color: rgba(49, 109, 194, 0.7);
   }
+
   &:active .nav-button__lines::after {
     background-color: rgba(49, 109, 194, 0.7);
   }
@@ -94,6 +86,7 @@
 .nav-button:focus-visible .nav-button__figure {
   background-color: $blue-color;
 }
+
 .nav-button:focus-visible .nav-button__lines {
   background-color: $white-color;
 }
@@ -171,19 +164,20 @@
 .nav-button--opened.nav-button:disabled .nav-button__lines {
   background-color: $white-color;
 }
+
 .nav-button--opened.nav-button--disabled .nav-button__lines::after {
   background-color: $white-color;
 }
 
-.nav-button--opened.nav-button:disabled .nav-button__lines::after  {
+.nav-button--opened.nav-button:disabled .nav-button__lines::after {
   background-color: $white-color;
 }
 
-.nav-button--opened.nav-button--disabled .nav-button__lines::before  {
+.nav-button--opened.nav-button--disabled .nav-button__lines::before {
   background-color: $white-color;
 }
 
-.nav-button--opened.nav-button:disabled .nav-button__lines::before  {
+.nav-button--opened.nav-button:disabled .nav-button__lines::before {
   background-color: $white-color;
 }
 
@@ -202,7 +196,7 @@
 .nav-button__text {
   @include font($primary-font, 14px, 14px, $blue-color);
 
-	font-weight: 500;
+  font-weight: 500;
   display: inline-block;
   letter-spacing: 0.28px;
   text-transform: uppercase;

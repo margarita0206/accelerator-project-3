@@ -11,15 +11,15 @@
   width: 290px;
   z-index: 2;
 
-	@media (min-width: $tablet-width) {
-		width: 678px;
+  @media (min-width: $tablet-width) {
+    width: 678px;
     top: 30px;
-	}
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1240px;
+  @media (min-width: $desktop-width) {
+    width: 1240px;
     top: 60px;
-	}
+  }
 }
 
 .hero-header__logo-wrapper {
@@ -43,7 +43,7 @@
   margin: 0 0 0 auto;
   gap: 4px;
 
-	@media (min-width: $tablet-width) {
-		width: 286px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 286px;
+  }
 }

@@ -1,64 +1,64 @@
 .faq__container {
-	width: 320px;
+  width: 320px;
   padding: 51px 15px;
-	margin: 0 auto;
+  margin: 0 auto;
 
-	@media (min-width: $tablet-width) {
-		width: 768px;
-		padding: 50px 45px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 50px 45px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1440px;
-		padding: 71px 206px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 71px 206px;
+  }
 }
 
 .faq__title {
-	@include font($primary-font, 20px, 20px, $blue-color);
+  @include font($primary-font, 20px, 20px, $blue-color);
 
-	font-weight: 400;
-	margin: 0 auto;
-	margin-bottom: 29px;
-	width: 290px;
-	text-align: center;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  width: 290px;
+  text-align: center;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 34px, 50px, $blue-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 34px, 50px, $blue-color);
 
-	  font-weight: 400;
-		margin-bottom: 40px;
-		letter-spacing: -1.1px;
-	}
+    font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing: -1.1px;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 50px, 50px, $blue-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 50px, 50px, $blue-color);
 
-	  font-weight: 400;
-		margin-bottom: 71px;
-		width: 427px;
+    font-weight: 400;
+    margin-bottom: 71px;
+    width: 427px;
     letter-spacing: 0;
-	}
+  }
 }
 
 .faq__list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
   flex-direction: column;
   align-items: center;
-	gap: 10px;
+  gap: 10px;
 }
 
 .faq__item {
-	border-radius: 14px;
+  border-radius: 14px;
   border: 2px solid $blue-color;
   color: $blue-color;
   padding: 20px 15px;
   cursor: pointer;
 
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 30px;
   }
 
@@ -66,7 +66,7 @@
     padding: 40px;
   }
 
-	&--active {
+  &--active {
     background-color: $blue-color;
     color: $white-color;
   }
@@ -92,26 +92,26 @@
 }
 
 .faq__item p {
-	@include font($primary-font, 14px, 20px, $primary-fon);
+  @include font($primary-font, 14px, 20px, $primary-fon);
 
-	font-weight: 400;
-	margin: 0;
-	padding: 0;
-	height: 0;
-	overflow: hidden;
-	transition: all 0.5s;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 16px, 20px, $primary-fon);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 16px, 20px, $primary-fon);
 
-		font-weight: 400;
-	}
+    font-weight: 400;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 16px, 26px, $primary-fon);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 16px, 26px, $primary-fon);
 
-		font-weight: 400;
-	}
+    font-weight: 400;
+  }
 }
 
 .faq__item br {
@@ -219,44 +219,44 @@
 }
 
 .faq__question-wrapper {
-	display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-
 }
 
 .faq__question {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-	display: block;
-	margin: 0;
-	width: 187px;
+  display: block;
+  margin: 0;
+  width: 187px;
 
-	@media (min-width: $tablet-width) {
-		width: 564px;
+  @media (min-width: $tablet-width) {
+    width: 564px;
     font-size: 22px;
     line-height: 26px;
-	}
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 894px;
+  @media (min-width: $desktop-width) {
+    width: 894px;
     font-size: 28px;
     line-height: 34px;
-	}
+  }
 }
 
 .faq__button {
-	position: relative;
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 30px;
   border: none;
   background-color: $blue-color;
+  cursor: pointer;
 
-	&::after {
-		content: "";
+  &::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -268,5 +268,6 @@
     mask-repeat: no-repeat;
     mask-position: 50% 50%;
     transition: all 0.5s;
-	}
+    cursor: pointer;
+  }
 }

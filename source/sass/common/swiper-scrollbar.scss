@@ -1,7 +1,7 @@
 .swiper-scrollbar-drag {
-	@media (min-width: $tablet-width) {
-		background-color: $blue-color;
-		height: 2px;
-		z-index: 1;
-	}
+  @media (min-width: $tablet-width) {
+    background-color: $blue-color;
+    height: 2px;
+    z-index: 1;
+  }
 }

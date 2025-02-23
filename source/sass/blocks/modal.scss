@@ -6,6 +6,7 @@
   transform: translate(-50%, -50%);
   z-index: 10;
   width: 290px;
+  max-height: 90vh;
   display: flex;
   flex-flow: wrap;
   align-items: flex-start;
@@ -14,12 +15,31 @@
   border-radius: 16px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s $smooth;
+  transition: opacity 0.3s $smooth, height 0.3s $smooth;
+  overflow-x: hidden;
 
   &--is-open {
     opacity: 1;
     pointer-events: auto;
   }
+}
+
+.modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__wrapper {
@@ -86,10 +106,10 @@
 }
 
 .modal__title {
-  font-size: 18px;
-  line-height: 18px;
-  color: $blue-color;
+  @include font($primary-font, 18px, 18px, $blue-color);
+
   font-weight: 400;
+  margin: 0;
   text-align: center;
   width: 220px;
 }
@@ -108,6 +128,7 @@
   width: 100%;
   min-height: 66px;
   gap: 10px 8px;
+
   &--check {
     flex-flow: wrap row;
     align-items: center;
@@ -118,6 +139,7 @@
     color: $blue-color;
     opacity: 1;
   }
+
   &:hover .modal__input:not(.modal__input--check) {
     border-color: $blue-color;
     opacity: 1;
@@ -130,14 +152,6 @@
   font-weight: 400;
   opacity: 80%;
   transition: opacity 0.3s $smooth;
-
-  &--check {
-    font-size: 12px;
-    width: fit-content;
-    width: 80%;
-    opacity: 90%;
-    cursor: pointer;
-  }
 }
 
 .modal__input:focus + .modal__input-title {
@@ -153,7 +167,7 @@
 
 .modal__input {
   min-height: 44px;
-  border: solid 1px #48484830;
+  border: solid 1px #484848;
   border-radius: 8px;
   padding: 0 20px;
   transition: opacity 0.3s $smooth, border 0.3s $smooth;
@@ -168,134 +182,25 @@
   }
 }
 
-.modal__button {
-  @include font($primary-font, 12px, 12px, $blue-color);
-
-	font-weight: 500;	
-	border: 1px solid $blue-color;
-	letter-spacing: 2%;
-	border-radius: 30px;
-	width: 223px;
-  padding: 10px 50px 10px 0;
-	min-height: 44px;
-	text-decoration: none;
-	text-transform: uppercase;
-  position: relative;
-
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 14px, 14px, $blue-color);
-
-		font-weight: 500;
-		letter-spacing: 2%;
-		width: 194px;
-		min-height: 54px;
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
-    width: 34px;
-		height: 34px;
-		background-color: $blue-color;
-		border-radius: 50%;
-		right: 3px;
-		top: 3px;
-
-		@media (min-width: $tablet-width) {
-			width: 46px;
-			height: 46px;
-		}
-	}
-
-	&::before {
-		content: "";
-		position: absolute;
-		display: block;
-    width: 10px;
-		height: 10px;
-		z-index: 1;
-		background-color: $white-color;
-		mask-image: url("/__spritemap#sprite-arrow-view");
-		mask-size: 10px 10px;
-    mask-repeat: no-repeat;
-		mask-position: center;
-		top: 15px;
-		right: 14px;
-
-		@media (min-width: $tablet-width) {
-			width: 10px;
-			height: 10px;
-			top: 22px;
-			right: 21px;
-		}
-	}
-
-	&:hover {
-		color: $white-color;
-		background-color: $blue-color;
-
-		&::after {
-			background-color: $white-color;
-		}
-
-		&::before {
-      background-color: $blue-color;
-			transform: rotate(45deg);
-		}
-	}
-
-	&:focus,
-		&:focus-visible {
-			&::before {
-				transform: rotate(45deg);
-			}
-		}
-
-		&:active {
-			color: rgba(255, 255, 255, 0.7);
-			background-color: $blue-color;
-	
-			&::after {
-				background-color: $white-color;
-			}
-	
-			&::before {
-				background-color: rgba(49, 109, 194, 0.7);
-				transform: rotate(45deg);
-			}
-		}
-
-		&:disabled {
-			color: $disabled-color;
-			background-color: $primary-fon;
-			border: 1px solid $disabled-color;
-	
-			&::after {
-				background-color: $disabled-color;
-			}
-	
-			&::before {
-				background-color: rgba(255, 255, 255, 0.6);
-			}
-		}
-}
-
 .modal__input-title--check {
   position: relative;
+  font-size: 12px;
+  width: 80%;
+  opacity: 90%;
+  cursor: pointer;
 
   &::before {
     position: absolute;
     content: "";
     width: 20px;
     height: 20px;
-    background-color: $white-color;
+    background-color: $blue-color;
     border: 1px solid $blue-color;
     border-radius: 2px;
     top: 50%;
     left: -28px;
     transform: translateY(-50%);
-    opacity: 0.7;
+    opacity: 1;
     transition: opacity 0.3s $smooth, background 0.3s $smooth, border 0.3s $smooth;
   }
 
@@ -304,7 +209,7 @@
     content: "";
     width: 10px;
     height: 10px;
-    background: $white-color;
+    background: transparent;
     z-index: 2;
     left: -22px;
     top: 50%;
@@ -324,21 +229,10 @@
   }
 }
 
-.modal__input--check:disabled + .modal__input-title--check {
-  pointer-events: none;
-  cursor: auto;
-  &::before {
-    opacity: 0.6;
-    background-color: #ffffff99;
-    pointer-events: none;
-    cursor: auto;
-  }
-}
-
 .modal__input--check.modal__input--error + .modal__input-title--check {
   &::before {
     border-color: #ff5e66;
-    background-color: #ff5e6633;
+    background-color: rgba(255, 94, 102, 0.2);
   }
 }
 
@@ -365,14 +259,19 @@
 }
 
 .modal__input--check:disabled + .modal__input-title--check {
+  pointer-events: none;
+  cursor: auto;
+
   &::before {
-    background-color: $disabled-color;
     border-color: $disabled-color;
+    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    cursor: auto;
   }
 
   &::after {
     background: $white-color;
-    left: -22px;
   }
 }
 
@@ -380,6 +279,7 @@
   width: 20px;
   height: 20px;
   border: solid 1px $blue-color;
+  border-width: 1px;
   opacity: 0;
   border-radius: 2px;
   position: relative;
@@ -389,6 +289,7 @@
   .modal {
     width: 510px;
     padding: 60px 80px;
+    max-height: 90vh;
   }
 
   .modal__title {
@@ -418,22 +319,22 @@
     width: 90%;
     font-size: 14px;
     line-height: 20px;
-
-    &--check {
-      font-size: 12px;
-      line-height: 12px;
-    }
   }
 
   .modal__button {
     width: 194px;
     margin: 10px auto 0;
+    padding: 4px 5px 4px 30px;
   }
 
   .modal__input-title--check {
+    font-size: 12px;
+    line-height: 12px;
+
     &::before {
       left: -31px;
     }
+
     &::after {
       left: -25px;
     }
@@ -463,6 +364,120 @@
     &--check {
       font-size: 12px;
       line-height: 12px;
+    }
+  }
+}
+
+.modal__button {
+  @include font($primary-font, 12px, 12px, $blue-color);
+
+  font-weight: 500;
+  border: 1px solid $blue-color;
+  letter-spacing: 2%;
+  border-radius: 30px;
+  width: 223px;
+  padding: 10px 50px 10px 0;
+  min-height: 44px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 14px, 14px, $blue-color);
+
+    font-weight: 500;
+    letter-spacing: 2%;
+    width: 194px;
+    min-height: 54px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: $blue-color;
+    border-radius: 50%;
+    right: 3px;
+    top: 3px;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: $white-color;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    top: 15px;
+    right: 14px;
+
+    @media (min-width: $tablet-width) {
+      width: 10px;
+      height: 10px;
+      top: 22px;
+      right: 21px;
+    }
+  }
+
+  &:hover {
+    color: $white-color;
+    background-color: $blue-color;
+
+    &::after {
+      background-color: $white-color;
+    }
+
+    &::before {
+      background-color: $blue-color;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $blue-color;
+
+    &::after {
+      background-color: $white-color;
+    }
+
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+      transform: rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    background-color: $primary-fon;
+    border: 1px solid $disabled-color;
+
+    &::after {
+      background-color: $disabled-color;
+    }
+
+    &::before {
+      background-color: rgba(255, 255, 255, 0.6);
     }
   }
 }

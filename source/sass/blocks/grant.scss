@@ -1,217 +1,215 @@
 .grant {
-	min-width: 320px;
-	padding: 71px 15px 70px;
-	background-color: $blue-color;
+  min-width: 320px;
+  padding: 71px 15px 70px;
+  background-color: $blue-color;
 
-	@media (min-width: $tablet-width) {
-		min-width: 768px;
-		padding: 100px 45px;
-	}
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    padding: 100px 45px;
+  }
 
-	@media (min-width: $desktop-width) {
-		min-width: 1440px;
-		padding: 120px 206px 119px 100px;
-	}
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding: 120px 206px 119px 100px;
+  }
 }
 
 .grant__container {
-	width: 290px;
-	margin: 0 auto;
+  width: 290px;
+  margin: 0 auto;
 
-	@media (min-width: $tablet-width) {
-		width: 678px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 1134px;
-		display: flex;
-		flex-wrap: wrap;
-		column-gap: 138px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 1134px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 138px;
+  }
 }
 
 .grant__title {
-	@include font($primary-font, 20px, 20px, $white-color);
+  @include font($primary-font, 20px, 20px, $white-color);
 
-	font-weight: 400;
-	margin: 0;
-	margin-bottom: 14px;
-	width: 290px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 14px;
+  width: 290px;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 34px, 50px, $white-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 34px, 50px, $white-color);
 
-	  font-weight: 400;
-		margin-bottom: 30px;
-		width: 498px;
-	}
+    font-weight: 400;
+    margin-bottom: 30px;
+    width: 498px;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 50px, 50px, $white-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 50px, 50px, $white-color);
 
-	  font-weight: 400;
-		margin-bottom: 30px;
-	}
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
 }
 
 .grant__wrapper {
+  p {
+    @include font($primary-font, 14px, 20px, $white-color);
 
-	p {
-		@include font($primary-font, 14px, 20px, $white-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+    width: 290px;
 
-	  font-weight: 400;
-		margin-bottom: 30px;
-		width: 290px;
+    @media (min-width: $tablet-width) {
+      @include font($primary-font, 16px, 20px, $white-color);
 
-		@media (min-width: $tablet-width) {
-			@include font($primary-font, 16px, 20px, $white-color);
-	
-			font-weight: 400;
-			margin-bottom: 40px;
-			width: 498px;
-		}
-	
-		@media (min-width: $desktop-width) {
-			@include font($primary-font, 16px, 26px, $white-color);
-	
-			font-weight: 400;
-		}
-	}
+      font-weight: 400;
+      margin-bottom: 40px;
+      width: 498px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font($primary-font, 16px, 26px, $white-color);
+
+      font-weight: 400;
+    }
+  }
 }
 
 .grant__img {
-	border-radius: 18px;
-	display: block;
-	margin-bottom: 40px;
+  border-radius: 18px;
+  display: block;
+  margin-bottom: 40px;
 
-	@media (min-width: $tablet-width) {
-		margin-bottom: 50px;
-	}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .grant__p {
-	@include font($primary-font, 18px, 22px, $white-color);
+  @include font($primary-font, 18px, 22px, $white-color);
 
-	font-weight: 400;
-	margin: 0 0 30px;
-	width: 210px;
+  font-weight: 400;
+  margin: 0 0 30px;
+  width: 210px;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 28px, 28px, $white-color);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 28px, 28px, $white-color);
 
-		font-weight: 400;
-		width: 636px;
-		margin: 0 0 45px;
-	}
+    font-weight: 400;
+    width: 636px;
+    margin: 0 0 45px;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 32px, 36px, $white-color);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 32px, 36px, $white-color);
 
-		font-weight: 400;
-		width: 493px;
-		margin-bottom: 55px;
-	}
+    font-weight: 400;
+    width: 493px;
+    margin-bottom: 55px;
+  }
 }
 
 .grant__text {
-	@include font($primary-font, 14px, 20px, $primary-fon);
+  @include font($primary-font, 14px, 20px, $primary-fon);
 
-	font-weight: 400;
-	width: 223px;
-	margin: 0;
+  font-weight: 400;
+  width: 223px;
+  margin: 0;
 
-	@media (min-width: $tablet-width) {
-		@include font($primary-font, 16px, 20px, $primary-fon);
+  @media (min-width: $tablet-width) {
+    @include font($primary-font, 16px, 20px, $primary-fon);
 
-		font-weight: 400;
-		width: 237px;
-	}
+    font-weight: 400;
+    width: 237px;
+  }
 
-	@media (min-width: $desktop-width) {
-		@include font($primary-font, 16px, 26px, $primary-fon);
+  @media (min-width: $desktop-width) {
+    @include font($primary-font, 16px, 26px, $primary-fon);
 
-		font-weight: 400;
-		width: 426px;
-	}
+    font-weight: 400;
+    width: 426px;
+  }
 }
 
 .grant__list {
-	margin: 0;
-	padding: 0;
-	width: 290px;
-	margin-left: 15px;
+  margin: 0;
+  padding: 0;
+  width: 290px;
+  margin-left: 15px;
 
-	@media (min-width: $tablet-width) {
-		width: 678px;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 25px 48px;
-		margin-left: 20px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 48px;
+    margin-left: 20px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 498px;
-		display: block;
-		margin: 0 0 0 20px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 498px;
+    display: block;
+    margin: 0 0 0 20px;
+  }
 }
 
 .grant__wrapper-list {
-	@media (min-width: $desktop-width) {
-		width: 498px;
-		margin-top: 10px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 498px;
+    margin-top: 10px;
+  }
 }
 
 .grant__item {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin-bottom: 15px;
-	border: 1px solid $primary-fon;
-	border-radius: 15px;
-	padding: 24px 20px 24px 25px;
-	width: 275px;
-	position: relative;
-	counter-increment: number;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 1px solid $primary-fon;
+  border-radius: 15px;
+  padding: 24px 20px 24px 25px;
+  width: 275px;
+  position: relative;
+  counter-increment: number;
 
-	&:last-of-type {
-		margin-bottom: 0;
-	}
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
-	@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 305px;
-		padding: 30px 25px;
-		margin: 0;
-	}
+    padding: 30px 25px;
+    margin: 0;
+  }
 
-	@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 478px;
-		margin-bottom: 23px;
-	}
+    margin-bottom: 23px;
+  }
 
-	&::before {
-		@include font($primary-font, 18px, 18px, $white-color);
+  &::before {
+    @include font($primary-font, 18px, 18px, $white-color);
 
-	  font-weight: 500;
-	  content: counter(number);
-	  position: absolute;
-	  margin: 0;
-	  text-align: left;
-	  padding: 7px 10px;
-	  width: min-content;
-	  background-color: $blue-color;
-	  top: -7px;
-	  left: -13px;
-	  overflow-wrap: break-word;
+    font-weight: 500;
+    content: counter(number);
+    position: absolute;
+    margin: 0;
+    text-align: left;
+    padding: 7px 10px;
+    width: min-content;
+    background-color: $blue-color;
+    top: -7px;
+    left: -13px;
+    overflow-wrap: break-word;
 
-		@media (min-width: $tablet-width) {
-			@include font($primary-font, 22px, 22px, $white-color);
+    @media (min-width: $tablet-width) {
+      @include font($primary-font, 22px, 22px, $white-color);
 
-	  font-weight: 500;
-			top: -12px;
-			left: -19px;
-			padding: 7px 12px;
-		}
-	}
+      font-weight: 500;
+      top: -12px;
+      left: -19px;
+      padding: 7px 12px;
+    }
+  }
 }
