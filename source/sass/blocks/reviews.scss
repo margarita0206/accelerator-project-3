@@ -83,16 +83,22 @@
 }
 
 .reviews__wrapper {
+  width: 290px;
+  height: 472px;
   padding: 30px 15px;
   border: 2px solid $blue-color;
   border-radius: 16px;
 
   @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 417px;
     padding: 50px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 50px 48px 78px 50px;
+    width: 604px;
+    height: 483px;
   }
 }
 
@@ -274,7 +280,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 467px;
+    width: 504px;
 
     p {
       @include font($primary-font, 16px, 26px, $primary-color);
