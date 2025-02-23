@@ -28,7 +28,7 @@
   display: flex;
   align-items: flex-end;
   flex-flow: wrap;
-  padding: 30px 15px;
+  padding: 30px 15px 19px;
   flex-shrink: 0;
   pointer-events: none;
 
@@ -48,10 +48,10 @@
 }
 
 .hero-swiper__pagination {
-  max-width: 90px;
+  max-width: 80px;
   height: 29px;
   position: absolute;
-  bottom: 339px;
+  bottom: 338px;
   background-color: $white-color;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -61,6 +61,7 @@
   flex-flow: wrap;
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
+  gap: 2px;
 
   &--fade-out {
     opacity: 0;
@@ -72,7 +73,7 @@
     width: 12px;
     height: 12px;
     bottom: 0;
-    right: -10px;
+    right: -12px;
     background-color: $white-color;
     mask: url("/__spritemap#sprite-angle-view") center center no-repeat;
   }
@@ -96,26 +97,12 @@
 }
 
 .hero-swiper__pagination-bullet {
-  width: 20px;
-  height: 18px;
+  width: 8px;
+  height: 8px;
   position: relative;
   top: -1px;
   transition: opacity 0.3s $smooth;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    width: 25px;
-    height: 25px;
-
-    &::before {
-      width: 12px;
-      height: 12px;
-    }
-  }
-
-  &--active::after {
-    opacity: 0;
-  }
 
   &:hover {
     opacity: 70%;
@@ -150,12 +137,11 @@
     background-color: $active-color-button;
   }
 
-
   &::before {
     position: absolute;
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 6px;
+    height: 6px;
     background-color: $blue-color;
     border-radius: 50%;
     top: 50%;
@@ -167,14 +153,22 @@
   &::after {
     position: absolute;
     content: "";
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background-color: $white-color;
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s $smooth, background-color 0.3s $smooth;
+  }
+
+  &--active::after {
+    opacity: 0;
+  }
+
+  &--active::before {
+    background-color: $active-color-button;
   }
 }
 
@@ -259,10 +253,11 @@
     content: "";
     width: 10px;
     height: 10px;
-    bottom: -9px;
-    right: 15px;
+    bottom: -10px;
+    right: 13px;
     background-color: $white-color;
-    mask: url("/__spritemap#sprite-corner-mobile-bottom-small-view") center center no-repeat;
+    mask: url("/__spritemap#sprite-angle-view") center center no-repeat;
+    transform: rotate(90deg);
   }
 
   @media (min-width: $tablet-width) {
@@ -275,7 +270,7 @@
 
     &::after {
       bottom: -25px;
-      right: 40px;
+      right: 45px;
       width: 26px;
       height: 26px;
       mask: url("/__spritemap#sprite-corner-bottom-view") center center no-repeat;
@@ -289,7 +284,7 @@
     padding: 40px 50px 30px;
 
     &::after {
-      right: 168px;
+      right: 173px;
     }
   }
 }
@@ -313,10 +308,11 @@
     content: "";
     width: 10px;
     height: 10px;
-    bottom: -9px;
-    right: 74px;
+    bottom: -10px;
+    right: 73px;
     background-color: $white-color;
-    mask: url("/__spritemap#sprite-corner-mobile-bottom-view") center center no-repeat;
+    mask: url("/__spritemap#sprite-angle-view") center center no-repeat;
+    transform: rotate(90deg);
   }
 
   p {
